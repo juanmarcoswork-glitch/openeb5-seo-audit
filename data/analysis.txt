@@ -1,0 +1,836 @@
+TOTAL 215 | EN 93 | ES 122
+
+=== STATUS CODES ===
+  EN: {200: 87, 404: 6}
+  ES: {200: 99, 404: 21, 503: 2}
+
+=== 404 / ERRORES ===
+  404  https://openeb5.com/ES/ES/
+  404  https://openeb5.com/ES/about-us/
+  503  https://openeb5.com/ES/blog/familias-en-latinoamerica-y-europa-estan-eligiendo-el-programa-eb-5-por-que/
+  404  https://openeb5.com/ES/brazil/
+  404  https://openeb5.com/ES/canada/
+  404  https://openeb5.com/ES/collaborative-projects/
+  404  https://openeb5.com/ES/contact-us/
+  404  https://openeb5.com/ES/countries/
+  404  https://openeb5.com/ES/current-projects/
+  404  https://openeb5.com/ES/eb-5-blog/
+  404  https://openeb5.com/ES/europe/
+  404  https://openeb5.com/ES/france/
+  404  https://openeb5.com/ES/investors/
+  404  https://openeb5.com/ES/news/
+  404  https://openeb5.com/ES/programa-eb-5/
+  503  https://openeb5.com/ES/proyectos-anteriores/
+  404  https://openeb5.com/ES/south-korea/
+  404  https://openeb5.com/ES/spain/
+  404  https://openeb5.com/ES/the-complete-guide-to-eb-5-investment/
+  404  https://openeb5.com/ES/the-team/
+  404  https://openeb5.com/ES/turkey/
+  404  https://openeb5.com/ES/united-kingdom/
+  404  https://openeb5.com/ES/venezuela/
+  404  https://openeb5.com/blog/page/2/
+  404  https://openeb5.com/canada/
+  404  https://openeb5.com/france/
+  404  https://openeb5.com/terms/
+  404  https://openeb5.com/turkey/
+  404  https://openeb5.com/venezuela/
+
+=== REDIRECCIONES (301/302) ===
+  http://www.openeb5.com
+      -> https://openeb5.com/
+  https://openeb5.com/2025/07/03/what-is-the-green-card-and-what-benefits-does-it-offer-in-the-united-states/
+      -> https://openeb5.com/blog/what-is-the-green-card-and-what-benefits-does-it-offer-in-the-united-states/
+  https://openeb5.com/2025/08/04/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+      -> https://openeb5.com/blog/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+  https://openeb5.com/2025/09/24/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+      -> https://openeb5.com/blog/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+  https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+      -> https://openeb5.com/ES/blog/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+  https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+      -> https://openeb5.com/ES/blog/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+  https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+      -> https://openeb5.com/ES/blog/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+  https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+      -> https://openeb5.com/ES/blog/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+  https://openeb5.com/ES/ES/advisory-board/
+      -> https://openeb5.com/ES/advisory-board/
+  https://openeb5.com/ES/ES/america/
+      -> https://openeb5.com/ES/america/
+  https://openeb5.com/ES/ES/argentina/
+      -> https://openeb5.com/ES/argentina/
+  https://openeb5.com/ES/ES/asia/
+      -> https://openeb5.com/ES/asia/
+  https://openeb5.com/ES/ES/australia/
+      -> https://openeb5.com/ES/australia/
+  https://openeb5.com/ES/ES/brasil/
+      -> https://openeb5.com/ES/brasil/
+  https://openeb5.com/ES/ES/chile/
+      -> https://openeb5.com/ES/chile/
+  https://openeb5.com/ES/ES/china/
+      -> https://openeb5.com/ES/china/
+  https://openeb5.com/ES/ES/colombia/
+      -> https://openeb5.com/ES/colombia/
+  https://openeb5.com/ES/ES/contactanos/
+      -> https://openeb5.com/ES/contactanos/
+  https://openeb5.com/ES/ES/corea-del-sur/
+      -> https://openeb5.com/ES/corea-del-sur/
+  https://openeb5.com/ES/ES/cuestionario-para-inversionistas/
+      -> https://openeb5.com/ES/cuestionario-para-inversionistas/
+  https://openeb5.com/ES/ES/eb5-blog/
+      -> https://openeb5.com/ES/eb5-blog/
+  https://openeb5.com/ES/ES/el-equipo/
+      -> https://openeb5.com/ES/el-equipo/
+  https://openeb5.com/ES/ES/espana/
+      -> https://openeb5.com/ES/espana/
+  https://openeb5.com/ES/ES/europa/
+      -> https://openeb5.com/ES/europa/
+  https://openeb5.com/ES/ES/guia-integral-para-inversiones-eb5/
+      -> https://openeb5.com/ES/guia-integral-para-inversiones-eb5/
+  https://openeb5.com/ES/ES/india/
+      -> https://openeb5.com/ES/india/
+  https://openeb5.com/ES/ES/israel/
+      -> https://openeb5.com/ES/israel/
+  https://openeb5.com/ES/ES/mexico/
+      -> https://openeb5.com/ES/mexico/
+  https://openeb5.com/ES/ES/midtown-brownsville-ii/
+      -> https://openeb5.com/ES/midtown-brownsville-ii/
+  https://openeb5.com/ES/ES/midtown-pharr/
+      -> https://openeb5.com/ES/proyectos-actuales/midtown-pharr/
+  https://openeb5.com/ES/ES/nosotros/
+      -> https://openeb5.com/ES/nosotros/
+  https://openeb5.com/ES/ES/noticias/
+      -> https://openeb5.com/ES/noticias/
+  https://openeb5.com/ES/ES/oceania/
+      -> https://openeb5.com/ES/oceania/
+  https://openeb5.com/ES/ES/paises/
+      -> https://openeb5.com/ES/paises/
+  https://openeb5.com/ES/ES/pakistan/
+      -> https://openeb5.com/ES/pakistan/
+  https://openeb5.com/ES/ES/peru/
+      -> https://openeb5.com/ES/peru/
+  https://openeb5.com/ES/ES/proyectos-actuales/
+      -> https://openeb5.com/ES/proyectos-actuales/
+  https://openeb5.com/ES/ES/proyectos-colaborativos/
+      -> https://openeb5.com/ES/proyectos-colaborativos/
+  https://openeb5.com/ES/ES/reino-unido/
+      -> https://openeb5.com/ES/reino-unido/
+  https://openeb5.com/ES/ES/taiwan/
+      -> https://openeb5.com/ES/taiwan/
+  https://openeb5.com/ES/ES/vietnam/
+      -> https://openeb5.com/ES/vietnam/
+  https://openeb5.com/ES/eb5-blog/page/1/
+      -> https://openeb5.com/ES/eb5-blog/
+  https://openeb5.com/ES/midtown-pharr/
+      -> https://openeb5.com/ES/proyectos-actuales/midtown-pharr/
+  https://openeb5.com/brownsville-parkside/
+      -> https://openeb5.com/current-projects/brownsville-parkside/
+  https://openeb5.com/eb-5-blog/page/1/
+      -> https://openeb5.com/eb-5-blog/
+  https://openeb5.com/lp-contact-us/
+      -> https://openeb5.com/contact-us/
+  https://openeb5.com/midtown-brownsville/
+      -> https://openeb5.com/midtown-brownsville-ii/
+  https://openeb5.com/midtown-pharr/
+      -> https://openeb5.com/current-projects/midtown-pharr/
+  https://www.openeb5.com
+      -> https://openeb5.com/
+
+=== ENLACES ROTOS: quien apunta a que ===
+  [404] https://openeb5.com/ES/ES/  <- 1 paginas
+        https://openeb5.com/ES/
+  [404] https://openeb5.com/ES/about-us/  <- 2 paginas
+        https://openeb5.com/ES/ES/nosotros/
+        https://openeb5.com/ES/nosotros/
+  [503] https://openeb5.com/ES/blog/familias-en-latinoamerica-y-europa-estan-eligiendo-el-programa-eb-5-por-que/  <- 6 paginas
+        https://openeb5.com/ES/ES/eb5-blog/
+        https://openeb5.com/ES/blog/que-pasa-despues-de-obtener-la-green-card-por-eb-5-etapas-y-proximos-pasos/
+        https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional-2/
+        https://openeb5.com/ES/eb5-blog/
+        https://openeb5.com/ES/eb5-blog/page/1/
+        https://openeb5.com/ES/tag/eb-5/
+  [404] https://openeb5.com/ES/brazil/  <- 6 paginas
+        https://openeb5.com/ES/ES/america/
+        https://openeb5.com/ES/ES/brasil/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/america/
+        https://openeb5.com/ES/brasil/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/ES/canada/  <- 4 paginas
+        https://openeb5.com/ES/ES/america/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/america/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/ES/collaborative-projects/  <- 2 paginas
+        https://openeb5.com/ES/ES/proyectos-colaborativos/
+        https://openeb5.com/ES/proyectos-colaborativos/
+  [404] https://openeb5.com/ES/contact-us/  <- 22 paginas
+        https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+        https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+        https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+        https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+        https://openeb5.com/ES/ES/contactanos/
+        https://openeb5.com/ES/blog/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+  [404] https://openeb5.com/ES/countries/  <- 2 paginas
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/ES/current-projects/  <- 2 paginas
+        https://openeb5.com/ES/ES/proyectos-actuales/
+        https://openeb5.com/ES/proyectos-actuales/
+  [404] https://openeb5.com/ES/eb-5-blog/  <- 4 paginas
+        https://openeb5.com/ES/ES/eb5-blog/
+        https://openeb5.com/ES/eb5-blog/
+        https://openeb5.com/ES/eb5-blog/page/1/
+        https://openeb5.com/ES/eb5-blog/page/2/
+  [404] https://openeb5.com/ES/europe/  <- 2 paginas
+        https://openeb5.com/ES/ES/europa/
+        https://openeb5.com/ES/europa/
+  [404] https://openeb5.com/ES/france/  <- 4 paginas
+        https://openeb5.com/ES/ES/europa/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/europa/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/ES/investors/  <- 2 paginas
+        https://openeb5.com/ES/ES/cuestionario-para-inversionistas/
+        https://openeb5.com/ES/cuestionario-para-inversionistas/
+  [404] https://openeb5.com/ES/news/  <- 2 paginas
+        https://openeb5.com/ES/ES/noticias/
+        https://openeb5.com/ES/noticias/
+  [404] https://openeb5.com/ES/programa-eb-5/  <- 1 paginas
+        https://openeb5.com/eb-5/
+  [503] https://openeb5.com/ES/proyectos-anteriores/  <- 118 paginas
+        https://openeb5.com/ES/
+        https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+        https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+        https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+        https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+        https://openeb5.com/ES/ES/
+  [404] https://openeb5.com/ES/south-korea/  <- 6 paginas
+        https://openeb5.com/ES/ES/asia/
+        https://openeb5.com/ES/ES/corea-del-sur/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/asia/
+        https://openeb5.com/ES/corea-del-sur/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/ES/spain/  <- 6 paginas
+        https://openeb5.com/ES/ES/espana/
+        https://openeb5.com/ES/ES/europa/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/espana/
+        https://openeb5.com/ES/europa/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/ES/the-complete-guide-to-eb-5-investment/  <- 2 paginas
+        https://openeb5.com/ES/ES/guia-integral-para-inversiones-eb5/
+        https://openeb5.com/ES/guia-integral-para-inversiones-eb5/
+  [404] https://openeb5.com/ES/the-team/  <- 2 paginas
+        https://openeb5.com/ES/ES/el-equipo/
+        https://openeb5.com/ES/el-equipo/
+  [404] https://openeb5.com/ES/turkey/  <- 4 paginas
+        https://openeb5.com/ES/ES/asia/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/asia/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/ES/united-kingdom/  <- 6 paginas
+        https://openeb5.com/ES/ES/europa/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/ES/reino-unido/
+        https://openeb5.com/ES/europa/
+        https://openeb5.com/ES/paises/
+        https://openeb5.com/ES/reino-unido/
+  [404] https://openeb5.com/ES/venezuela/  <- 4 paginas
+        https://openeb5.com/ES/ES/america/
+        https://openeb5.com/ES/ES/paises/
+        https://openeb5.com/ES/america/
+        https://openeb5.com/ES/paises/
+  [404] https://openeb5.com/blog/page/2/  <- 1 paginas
+        https://openeb5.com/blog/
+  [404] https://openeb5.com/canada/  <- 6 paginas
+        http://www.openeb5.com
+        https://openeb5.com/
+        https://openeb5.com/america/
+        https://openeb5.com/countries/
+        https://openeb5.com/eb-5/
+        https://www.openeb5.com
+  [404] https://openeb5.com/france/  <- 6 paginas
+        http://www.openeb5.com
+        https://openeb5.com/
+        https://openeb5.com/countries/
+        https://openeb5.com/eb-5/
+        https://openeb5.com/europe/
+        https://www.openeb5.com
+  [404] https://openeb5.com/terms/  <- 90 paginas
+        http://www.openeb5.com
+        https://openeb5.com/
+        https://openeb5.com/2025/07/03/what-is-the-green-card-and-what-benefits-does-it-offer-in-the-united-states/
+        https://openeb5.com/2025/08/04/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+        https://openeb5.com/2025/09/24/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+        https://openeb5.com/about-us/
+  [404] https://openeb5.com/turkey/  <- 6 paginas
+        http://www.openeb5.com
+        https://openeb5.com/
+        https://openeb5.com/asia/
+        https://openeb5.com/countries/
+        https://openeb5.com/eb-5/
+        https://www.openeb5.com
+  [404] https://openeb5.com/venezuela/  <- 6 paginas
+        http://www.openeb5.com
+        https://openeb5.com/
+        https://openeb5.com/america/
+        https://openeb5.com/countries/
+        https://openeb5.com/eb-5/
+        https://www.openeb5.com
+
+=== TITLES: faltantes / duplicados / longitud ===
+  DUP x4: 'Blog Programa EB5: Artículos y Guías Oficiales en EE. UU.'
+        https://openeb5.com/ES/eb5-blog/
+        https://openeb5.com/ES/ES/eb5-blog/
+        https://openeb5.com/ES/eb5-blog/page/2/
+        https://openeb5.com/ES/eb5-blog/page/1/
+  DUP x3: 'Navigate the EB5 Program with OpenEB5 Regional Center'
+        https://openeb5.com/
+        https://www.openeb5.com
+        http://www.openeb5.com
+  DUP x3: 'EB5 Blog: Expert Insights for Foreign Investors'
+        https://openeb5.com/eb-5-blog/
+        https://openeb5.com/eb-5-blog/page/2/
+        https://openeb5.com/eb-5-blog/page/1/
+  DUP x3: 'Proyecto Midtown Pharr: Conozca Nuestro Desarrollo EB5'
+        https://openeb5.com/ES/midtown-pharr/
+        https://openeb5.com/ES/proyectos-actuales/midtown-pharr/
+        https://openeb5.com/ES/ES/midtown-pharr/
+  DUP x2: '3 clear signs that you are ready to apply for the EB-5 visa - openeb5'
+        https://openeb5.com/blog/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+        https://openeb5.com/2025/08/04/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+  DUP x2: 'What Is the EB5 Program and Who Qualifies for It in the U.S.? - openeb5'
+        https://openeb5.com/blog/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+        https://openeb5.com/2025/09/24/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+  DUP x2: 'What Is the Green Card and What Benefits Does It Offer?'
+        https://openeb5.com/blog/what-is-the-green-card-and-what-benefits-does-it-offer-in-the-united-states/
+        https://openeb5.com/2025/07/03/what-is-the-green-card-and-what-benefits-does-it-offer-in-the-united-states/
+  DUP x2: 'Brownsville Parkside - openeb5'
+        https://openeb5.com/brownsville-parkside/
+        https://openeb5.com/current-projects/brownsville-parkside/
+  DUP x2: 'Blog Archives - openeb5'
+        https://openeb5.com/category/blog/
+        https://openeb5.com/blog/
+  DUP x2: 'Contact Open EB5 | Schedule a Free Consultation Today'
+        https://openeb5.com/contact-us/
+        https://openeb5.com/lp-contact-us/
+  DUP x2: 'MidTown Brownsville II | EB5 Investment Project'
+        https://openeb5.com/midtown-brownsville-ii/
+        https://openeb5.com/midtown-brownsville/
+  DUP x2: 'Midtown Pharr EB5 Project | Texas Real Estate'
+        https://openeb5.com/midtown-pharr/
+        https://openeb5.com/current-projects/midtown-pharr/
+  DUP x2: 'New EB5 Updates &amp; Regional Center News | OpenEB5'
+        https://openeb5.com/news/
+        https://openeb5.com/news/page/2/
+  DUP x2: 'Centro Regional EB5 en Texas Aprobado por USCIS | OpenEB5'
+        https://openeb5.com/ES/nosotros/
+        https://openeb5.com/ES/ES/nosotros/
+  DUP x2: 'Asesores Visa EB5: Conozca a Nuestro Equipo | OpenEB5'
+        https://openeb5.com/ES/el-equipo/
+        https://openeb5.com/ES/ES/el-equipo/
+  DUP x2: 'Guía Para Visa EB5: Requisitos y Proceso'
+        https://openeb5.com/ES/guia-integral-para-inversiones-eb5/
+        https://openeb5.com/ES/ES/guia-integral-para-inversiones-eb5/
+  DUP x2: 'Países Programa EB5: Evalúe su Elegibilidad y Perfil'
+        https://openeb5.com/ES/paises/
+        https://openeb5.com/ES/ES/paises/
+  DUP x2: 'Programa EB5 América: Evalúe sus Opciones en EE. UU.'
+        https://openeb5.com/ES/america/
+        https://openeb5.com/ES/ES/america/
+  DUP x2: 'Programa EB5 Asia: Evalúe sus Opciones en EE. UU.'
+        https://openeb5.com/ES/asia/
+        https://openeb5.com/ES/ES/asia/
+  DUP x2: 'Programa EB5 Europa: Evalúe sus Opciones en EE. UU'
+        https://openeb5.com/ES/europa/
+        https://openeb5.com/ES/ES/europa/
+  DUP x2: 'Programa EB5 Oceania: Evalúe sus Opciones en EE. UU'
+        https://openeb5.com/ES/oceania/
+        https://openeb5.com/ES/ES/oceania/
+  DUP x2: 'Proyectos Actuales EB5: Conozca Nuestro Portafolio'
+        https://openeb5.com/ES/proyectos-actuales/
+        https://openeb5.com/ES/ES/proyectos-actuales/
+  DUP x2: 'Proyectos Colaborativos EB5: Alianzas y Desarrollos'
+        https://openeb5.com/ES/proyectos-colaborativos/
+        https://openeb5.com/ES/ES/proyectos-colaborativos/
+  DUP x2: 'Cuestionario Programa EB5: Complete Su Evaluación'
+        https://openeb5.com/ES/cuestionario-para-inversionistas/
+        https://openeb5.com/ES/ES/cuestionario-para-inversionistas/
+  DUP x2: 'Noticias - Open EB5 | Green Card'
+        https://openeb5.com/ES/noticias/
+        https://openeb5.com/ES/ES/noticias/
+  DUP x2: 'Contacto Open EB5: Comuníquese con Nuestro Equipo Hoy'
+        https://openeb5.com/ES/contactanos/
+        https://openeb5.com/ES/ES/contactanos/
+  DUP x2: 'MidTown Brownsville II - Open EB5 | Green Card'
+        https://openeb5.com/ES/midtown-brownsville-ii/
+        https://openeb5.com/ES/ES/midtown-brownsville-ii/
+  DUP x2: 'Consejo Consultivo - Open EB5 | Green Card'
+        https://openeb5.com/ES/advisory-board/
+        https://openeb5.com/ES/ES/advisory-board/
+  DUP x2: 'Argentina - Open EB5 | Green Card'
+        https://openeb5.com/ES/argentina/
+        https://openeb5.com/ES/ES/argentina/
+  DUP x2: 'Australia - Open EB5 | Green Card'
+        https://openeb5.com/ES/australia/
+        https://openeb5.com/ES/ES/australia/
+  DUP x2: 'Brasil - Open EB5 | Green Card'
+        https://openeb5.com/ES/brasil/
+        https://openeb5.com/ES/ES/brasil/
+  DUP x2: 'Chile - Open EB5 | Green Card'
+        https://openeb5.com/ES/chile/
+        https://openeb5.com/ES/ES/chile/
+  DUP x2: 'China - Open EB5 | Green Card'
+        https://openeb5.com/ES/china/
+        https://openeb5.com/ES/ES/china/
+  DUP x2: 'Colombia - Open EB5 | Green Card'
+        https://openeb5.com/ES/colombia/
+        https://openeb5.com/ES/ES/colombia/
+  DUP x2: 'India - Open EB5 | Green Card'
+        https://openeb5.com/ES/india/
+        https://openeb5.com/ES/ES/india/
+  DUP x2: 'Israel - Open EB5 | Green Card'
+        https://openeb5.com/ES/israel/
+        https://openeb5.com/ES/ES/israel/
+  DUP x2: 'México - Open EB5 | Green Card'
+        https://openeb5.com/ES/mexico/
+        https://openeb5.com/ES/ES/mexico/
+  DUP x2: 'Pakistán - Open EB5 | Green Card'
+        https://openeb5.com/ES/pakistan/
+        https://openeb5.com/ES/ES/pakistan/
+  DUP x2: 'Perú - Open EB5 | Green Card'
+        https://openeb5.com/ES/peru/
+        https://openeb5.com/ES/ES/peru/
+  DUP x2: 'Corea del Sur - Open EB5 | Green Card'
+        https://openeb5.com/ES/corea-del-sur/
+        https://openeb5.com/ES/ES/corea-del-sur/
+  DUP x2: 'España - Open EB5 | Green Card'
+        https://openeb5.com/ES/espana/
+        https://openeb5.com/ES/ES/espana/
+  DUP x2: 'Taiwán - Open EB5 | Green Card'
+        https://openeb5.com/ES/taiwan/
+        https://openeb5.com/ES/ES/taiwan/
+  DUP x2: 'Reino Unido - Open EB5 | Green Card'
+        https://openeb5.com/ES/reino-unido/
+        https://openeb5.com/ES/ES/reino-unido/
+  DUP x2: 'Vietnam - Open EB5 | Green Card'
+        https://openeb5.com/ES/vietnam/
+        https://openeb5.com/ES/ES/vietnam/
+  DUP x2: 'Mitos y realidades del programa EB-5: lo que es y lo que no es - Open EB5 | Green Card'
+        https://openeb5.com/ES/blog/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+        https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+  DUP x2: '3 señales claras de que estás listo para aplicar a la visa EB-5 - Open EB5 | Green Card'
+        https://openeb5.com/ES/blog/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+        https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+  DUP x2: '¿Qué es la Visa EB-5 y cómo funciona? Guía completa paso a paso - Open EB5 | Green Card'
+        https://openeb5.com/ES/blog/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+        https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+  DUP x2: 'Texas, el Lugar Ideal para Invertir y Obtener tu residencia permanente con Open EB5 - Open'
+        https://openeb5.com/ES/blog/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+        https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+  -- longitud fuera de rango (>60 o <30) --
+     69  https://openeb5.com/2025/08/04/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+         3 clear signs that you are ready to apply for the EB-5 visa - openeb5
+     71  https://openeb5.com/2025/09/24/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+         What Is the EB5 Program and Who Qualifies for It in the U.S.? - openeb5
+    107  https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+         Texas, el Lugar Ideal para Invertir y Obtener tu residencia permanente con Open EB5 - Open EB5 | Green Card
+     87  https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+         ¿Qué es la Visa EB-5 y cómo funciona? Guía completa paso a paso - Open EB5 | Green Card
+     87  https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+         3 señales claras de que estás listo para aplicar a la visa EB-5 - Open EB5 | Green Card
+     86  https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+         Mitos y realidades del programa EB-5: lo que es y lo que no es - Open EB5 | Green Card
+     29  https://openeb5.com/ES/ES/chile/
+         Chile - Open EB5 | Green Card
+     29  https://openeb5.com/ES/ES/china/
+         China - Open EB5 | Green Card
+     29  https://openeb5.com/ES/ES/india/
+         India - Open EB5 | Green Card
+     28  https://openeb5.com/ES/ES/peru/
+         Perú - Open EB5 | Green Card
+     87  https://openeb5.com/ES/blog/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+         3 señales claras de que estás listo para aplicar a la visa EB-5 - Open EB5 | Green Card
+     82  https://openeb5.com/ES/blog/green-card-como-obtenerla-por-inversion-empleo-o-familia/
+         Green Card: Cómo obtenerla por inversión, empleo o familia - Open EB5 | Green Card
+    113  https://openeb5.com/ES/blog/guia-de-la-visa-de-inversionista-eb-5-requisitos-costos-y-el-camino-hacia-la-green-card/
+         Guía de la Visa de Inversionista EB-5: Requisitos, Costos y el Camino hacia la Green Card - Open EB5 | Green C
+    108  https://openeb5.com/ES/blog/inversion-estrategica-con-open-eb5/
+         Inversión Estratégica con Open EB5: Obtén la Residencia Permanente en Estados Unidos - Open EB5 | Green Card
+     86  https://openeb5.com/ES/blog/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+         Mitos y realidades del programa EB-5: lo que es y lo que no es - Open EB5 | Green Card
+    107  https://openeb5.com/ES/blog/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+         Texas, el Lugar Ideal para Invertir y Obtener tu residencia permanente con Open EB5 - Open EB5 | Green Card
+     88  https://openeb5.com/ES/blog/que-es-la-green-card-y-que-beneficios-ofrece-en-estados-unidos/
+         ¿Qué es la Green Card y qué beneficios ofrece en Estados Unidos? - Open EB5 | Green Card
+     87  https://openeb5.com/ES/blog/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+         ¿Qué es la Visa EB-5 y cómo funciona? Guía completa paso a paso - Open EB5 | Green Card
+    111  https://openeb5.com/ES/blog/que-pasa-despues-de-obtener-la-green-card-por-eb-5-etapas-y-proximos-pasos/
+         ¿Qué pasa después de navegar el programa de visa EB-5 por EB-5? Etapas y próximos pasos - Open EB5 | Green Car
+     73  https://openeb5.com/ES/blog/requisitos-actualizados-para-la-visa-eb-5-en-2025/
+         Requisitos actualizados para la Visa EB-5 en 2025 - Open EB5 | Green Card
+     72  https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional-2/
+         Visa EB-5: ¿Inversión Directa o Centro Regional? - Open EB5 | Green Card
+     72  https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional/
+         Visa EB-5: ¿Inversión directa o centro regional? - Open EB5 | Green Card
+     29  https://openeb5.com/ES/chile/
+         Chile - Open EB5 | Green Card
+     29  https://openeb5.com/ES/china/
+         China - Open EB5 | Green Card
+     29  https://openeb5.com/ES/india/
+         India - Open EB5 | Green Card
+     28  https://openeb5.com/ES/peru/
+         Perú - Open EB5 | Green Card
+     23  https://openeb5.com/blog/
+         Blog Archives - openeb5
+     69  https://openeb5.com/blog/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+         3 clear signs that you are ready to apply for the EB-5 visa - openeb5
+     72  https://openeb5.com/blog/5-factors-to-consider-before-choosing-an-eb-5-project-in-2026/
+         5 factors to consider before choosing an EB-5 project in 2026​ - openeb5
+    122  https://openeb5.com/blog/eb-5-project-strength-explained-why-midtown-brownsville-ii-is-a-strategic-opportunity-in-the-rio-grande-valley/
+         EB-5 project strength explained: why Midtown Brownsville II is a strategic opportunity in the Rio Grande Valle
+     61  https://openeb5.com/blog/eb5-september-30-deadline-midtown-brownsville-ii/
+         EB-5 Visa: September 30 Deadline &amp; MidTown Brownsville II
+     71  https://openeb5.com/blog/green-card-how-to-obtain-it-through-investment-employment-or-family/
+         How to navigate the EB-5 visa program: Investment, Employment or Family
+     61  https://openeb5.com/blog/guide-to-the-eb-5-investor-visa-requirements-costs-and-the-path-to-a-green-card-through-investment/
+         EB-5 Investor Visa: Requirements, Costs &amp; Green Card Path
+     63  https://openeb5.com/blog/midtown-brownsville-positioned-at-the-center-of-a-new-u-s-energy-industrial-expansion/
+         Midtown Brownsville: U.S. Energy &amp; Industrial Expansion Hub
+     79  https://openeb5.com/blog/myths-and-realities-of-the-eb-5-program-what-it-is-and-what-it-isnt/
+         Myths and Realities of the EB-5 Program: What It Is and What It Isn’t - openeb5
+     98  https://openeb5.com/blog/open-eb5-secures-i-956f-approval-for-midtown-pharr-a-milestone-in-the-rio-grande-valley/
+         Open EB5 Secures I-956F Approval for Midtown Pharr: A Milestone in the Rio Grande Valley - openeb5
+     61  https://openeb5.com/blog/strategic-investment-with-open-eb5/
+         Strategic EB-5 Investment with Open EB5 | Permanent Residency
+     71  https://openeb5.com/blog/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+         What Is the EB5 Program and Who Qualifies for It in the U.S.? - openeb5
+     23  https://openeb5.com/category/blog/
+         Blog Archives - openeb5
+     26  https://openeb5.com/tag/builder/
+         Builder Archives - openeb5
+     24  https://openeb5.com/tag/cloud/
+         Cloud Archives - openeb5
+     22  https://openeb5.com/tag/map/
+         Map Archives - openeb5
+     26  https://openeb5.com/terms-of-service/
+         Terms of service - openeb5
+
+=== META DESCRIPTION faltante o mala ===
+  FALTA        https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+  FALTA        https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+  FALTA        https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+  FALTA        https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+  LEN 178      https://openeb5.com/ES/ES/advisory-board/
+  FALTA        https://openeb5.com/ES/ES/argentina/
+  FALTA        https://openeb5.com/ES/ES/australia/
+  FALTA        https://openeb5.com/ES/ES/brasil/
+  FALTA        https://openeb5.com/ES/ES/chile/
+  FALTA        https://openeb5.com/ES/ES/china/
+  FALTA        https://openeb5.com/ES/ES/colombia/
+  FALTA        https://openeb5.com/ES/ES/corea-del-sur/
+  FALTA        https://openeb5.com/ES/ES/espana/
+  FALTA        https://openeb5.com/ES/ES/india/
+  FALTA        https://openeb5.com/ES/ES/israel/
+  FALTA        https://openeb5.com/ES/ES/mexico/
+  LEN 341      https://openeb5.com/ES/ES/midtown-brownsville-ii/
+  FALTA        https://openeb5.com/ES/ES/noticias/
+  FALTA        https://openeb5.com/ES/ES/pakistan/
+  FALTA        https://openeb5.com/ES/ES/peru/
+  FALTA        https://openeb5.com/ES/ES/reino-unido/
+  FALTA        https://openeb5.com/ES/ES/taiwan/
+  FALTA        https://openeb5.com/ES/ES/vietnam/
+  LEN 178      https://openeb5.com/ES/advisory-board/
+  FALTA        https://openeb5.com/ES/argentina/
+  FALTA        https://openeb5.com/ES/australia/
+  FALTA        https://openeb5.com/ES/blog/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+  FALTA        https://openeb5.com/ES/blog/green-card-como-obtenerla-por-inversion-empleo-o-familia/
+  FALTA        https://openeb5.com/ES/blog/guia-de-la-visa-de-inversionista-eb-5-requisitos-costos-y-el-camino-hacia-la-green-card/
+  FALTA        https://openeb5.com/ES/blog/inversion-estrategica-con-open-eb5/
+  FALTA        https://openeb5.com/ES/blog/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+  FALTA        https://openeb5.com/ES/blog/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+  FALTA        https://openeb5.com/ES/blog/que-es-la-green-card-y-que-beneficios-ofrece-en-estados-unidos/
+  FALTA        https://openeb5.com/ES/blog/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+  FALTA        https://openeb5.com/ES/blog/que-pasa-despues-de-obtener-la-green-card-por-eb-5-etapas-y-proximos-pasos/
+  FALTA        https://openeb5.com/ES/blog/requisitos-actualizados-para-la-visa-eb-5-en-2025/
+  FALTA        https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional-2/
+  FALTA        https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional/
+  FALTA        https://openeb5.com/ES/brasil/
+  FALTA        https://openeb5.com/ES/chile/
+  FALTA        https://openeb5.com/ES/china/
+  FALTA        https://openeb5.com/ES/colombia/
+  FALTA        https://openeb5.com/ES/corea-del-sur/
+  FALTA        https://openeb5.com/ES/espana/
+  FALTA        https://openeb5.com/ES/india/
+  FALTA        https://openeb5.com/ES/israel/
+  FALTA        https://openeb5.com/ES/lp-guia/
+  FALTA        https://openeb5.com/ES/mexico/
+  LEN 341      https://openeb5.com/ES/midtown-brownsville-ii/
+  FALTA        https://openeb5.com/ES/noticias/
+  FALTA        https://openeb5.com/ES/pakistan/
+  FALTA        https://openeb5.com/ES/peru/
+  FALTA        https://openeb5.com/ES/privacy-policy/
+  FALTA        https://openeb5.com/ES/reino-unido/
+  FALTA        https://openeb5.com/ES/tag/eb-5/
+  FALTA        https://openeb5.com/ES/tag/eb-5/page/2/
+  FALTA        https://openeb5.com/ES/taiwan/
+  FALTA        https://openeb5.com/ES/terms-of-service/
+  FALTA        https://openeb5.com/ES/vietnam/
+  FALTA        https://openeb5.com/blog/
+  LEN 166      https://openeb5.com/blog/strategic-investment-with-open-eb5/
+  FALTA        https://openeb5.com/brownsville-parkside/
+  FALTA        https://openeb5.com/category/blog/
+  FALTA        https://openeb5.com/category/blog/page/2/
+  FALTA        https://openeb5.com/current-projects/brownsville-parkside/
+  FALTA        https://openeb5.com/tag/builder/
+  FALTA        https://openeb5.com/tag/builder/page/2/
+  FALTA        https://openeb5.com/tag/cloud/
+  FALTA        https://openeb5.com/tag/cloud/page/2/
+  FALTA        https://openeb5.com/tag/map/
+  FALTA        https://openeb5.com/tag/map/page/2/
+  FALTA        https://openeb5.com/terms-of-service/
+
+=== H1: faltante o multiple ===
+  2 H1s       https://openeb5.com/ES/ES/brasil/  | ['Brasil', 'Investimento Estratégico nos EUA']
+  2 H1s       https://openeb5.com/ES/ES/corea-del-sur/  | ['Corea del Sur', 'Expand Your Horizons with EB5 Investment']
+  2 H1s       https://openeb5.com/ES/ES/espana/  | ['España', 'Construye tu legado en los Estados Unido']
+  2 H1s       https://openeb5.com/ES/ES/reino-unido/  | ['Reino Unido', 'Build Your American Legacy &amp; Expand ']
+  2 H1s       https://openeb5.com/ES/brasil/  | ['Brasil', 'Investimento Estratégico nos EUA']
+  2 H1s       https://openeb5.com/ES/corea-del-sur/  | ['Corea del Sur', 'Expand Your Horizons with EB5 Investment']
+  2 H1s       https://openeb5.com/ES/espana/  | ['España', 'Construye tu legado en los Estados Unido']
+  2 H1s       https://openeb5.com/ES/reino-unido/  | ['Reino Unido', 'Build Your American Legacy &amp; Expand ']
+
+=== HREFLANG ===
+  Paginas SIN hreflang: 68 de 180
+      https://openeb5.com/2025/07/03/what-is-the-green-card-and-what-benefits-does-it-offer-in-the-united-states/
+      https://openeb5.com/2025/08/04/3-clear-signs-that-you-are-ready-to-apply-for-the-eb-5-visa/
+      https://openeb5.com/2025/09/24/what-is-the-eb5-program-and-who-qualifies-for-it-in-the-u-s/
+      https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+      https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+      https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+      https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+      https://openeb5.com/ES/blog/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+      https://openeb5.com/ES/blog/es-fecha-limite-30-septiembre-eb5-midtown-brownsville-ii/
+      https://openeb5.com/ES/blog/es-historica-aprobacion-i956f-midtown-brownsville-ii/
+      https://openeb5.com/ES/blog/es-proyectos-eb5-valle-rio-grande-metropolis-fronteriza/
+      https://openeb5.com/ES/blog/es-saronic-technologies-brownsville-port-alpha-eb5/
+      https://openeb5.com/ES/blog/green-card-como-obtenerla-por-inversion-empleo-o-familia/
+      https://openeb5.com/ES/blog/guia-de-la-visa-de-inversionista-eb-5-requisitos-costos-y-el-camino-hacia-la-green-card/
+      https://openeb5.com/ES/blog/inversion-estrategica-con-open-eb5/
+      https://openeb5.com/ES/blog/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+      https://openeb5.com/ES/blog/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+      https://openeb5.com/ES/blog/que-es-la-green-card-y-que-beneficios-ofrece-en-estados-unidos/
+      https://openeb5.com/ES/blog/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+      https://openeb5.com/ES/blog/que-pasa-despues-de-obtener-la-green-card-por-eb-5-etapas-y-proximos-pasos/
+      https://openeb5.com/ES/blog/requisitos-actualizados-para-la-visa-eb-5-en-2025/
+      https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional-2/
+      https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional/
+      https://openeb5.com/ES/eb-5/
+      https://openeb5.com/ES/lp-guia/
+  -- ejemplos CON hreflang --
+      http://www.openeb5.com
+           en-US    https://openeb5.com/
+           es       https://openeb5.com/ES/
+           x-default https://openeb5.com/
+      https://openeb5.com/
+           en-US    https://openeb5.com/
+           es       https://openeb5.com/ES/
+           x-default https://openeb5.com/
+      https://openeb5.com/ES/
+           en-US    https://openeb5.com/ES/
+           es       https://openeb5.com/ES/ES/
+           x-default https://openeb5.com/ES/
+      https://openeb5.com/ES/ES/advisory-board/
+           en-US    https://openeb5.com/ES/advisory-board/
+           es       https://openeb5.com/ES/ES/advisory-board/
+           x-default https://openeb5.com/ES/advisory-board/
+      https://openeb5.com/ES/ES/america/
+           en-US    https://openeb5.com/ES/america/
+           es       https://openeb5.com/ES/ES/america/
+           x-default https://openeb5.com/ES/america/
+      https://openeb5.com/ES/ES/argentina/
+           en-US    https://openeb5.com/ES/argentina/
+           es       https://openeb5.com/ES/ES/argentina/
+           x-default https://openeb5.com/ES/argentina/
+
+=== LANG attr ===
+   {'en-US': 180}
+  -- ES con lang incorrecto --
+      lang=en-US  https://openeb5.com/ES/
+      lang=en-US  https://openeb5.com/ES/2025/01/23/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+      lang=en-US  https://openeb5.com/ES/2025/05/23/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+      lang=en-US  https://openeb5.com/ES/2025/08/04/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+      lang=en-US  https://openeb5.com/ES/2025/08/25/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+      lang=en-US  https://openeb5.com/ES/ES/advisory-board/
+      lang=en-US  https://openeb5.com/ES/ES/america/
+      lang=en-US  https://openeb5.com/ES/ES/argentina/
+      lang=en-US  https://openeb5.com/ES/ES/asia/
+      lang=en-US  https://openeb5.com/ES/ES/australia/
+      lang=en-US  https://openeb5.com/ES/ES/brasil/
+      lang=en-US  https://openeb5.com/ES/ES/chile/
+      lang=en-US  https://openeb5.com/ES/ES/china/
+      lang=en-US  https://openeb5.com/ES/ES/colombia/
+      lang=en-US  https://openeb5.com/ES/ES/contactanos/
+      lang=en-US  https://openeb5.com/ES/ES/corea-del-sur/
+      lang=en-US  https://openeb5.com/ES/ES/cuestionario-para-inversionistas/
+      lang=en-US  https://openeb5.com/ES/ES/eb5-blog/
+      lang=en-US  https://openeb5.com/ES/ES/el-equipo/
+      lang=en-US  https://openeb5.com/ES/ES/espana/
+      lang=en-US  https://openeb5.com/ES/ES/europa/
+      lang=en-US  https://openeb5.com/ES/ES/guia-integral-para-inversiones-eb5/
+      lang=en-US  https://openeb5.com/ES/ES/india/
+      lang=en-US  https://openeb5.com/ES/ES/israel/
+      lang=en-US  https://openeb5.com/ES/ES/mexico/
+      lang=en-US  https://openeb5.com/ES/ES/midtown-brownsville-ii/
+      lang=en-US  https://openeb5.com/ES/ES/midtown-pharr/
+      lang=en-US  https://openeb5.com/ES/ES/nosotros/
+      lang=en-US  https://openeb5.com/ES/ES/noticias/
+      lang=en-US  https://openeb5.com/ES/ES/oceania/
+      lang=en-US  https://openeb5.com/ES/ES/paises/
+      lang=en-US  https://openeb5.com/ES/ES/pakistan/
+      lang=en-US  https://openeb5.com/ES/ES/peru/
+      lang=en-US  https://openeb5.com/ES/ES/proyectos-actuales/
+      lang=en-US  https://openeb5.com/ES/ES/proyectos-colaborativos/
+      lang=en-US  https://openeb5.com/ES/ES/reino-unido/
+      lang=en-US  https://openeb5.com/ES/ES/taiwan/
+      lang=en-US  https://openeb5.com/ES/ES/vietnam/
+      lang=en-US  https://openeb5.com/ES/advisory-board/
+      lang=en-US  https://openeb5.com/ES/america/
+      lang=en-US  https://openeb5.com/ES/argentina/
+      lang=en-US  https://openeb5.com/ES/asia/
+      lang=en-US  https://openeb5.com/ES/australia/
+      lang=en-US  https://openeb5.com/ES/blog/3-senales-claras-de-que-estas-listo-para-aplicar-a-la-visa-eb-5/
+      lang=en-US  https://openeb5.com/ES/blog/es-fecha-limite-30-septiembre-eb5-midtown-brownsville-ii/
+      lang=en-US  https://openeb5.com/ES/blog/es-historica-aprobacion-i956f-midtown-brownsville-ii/
+      lang=en-US  https://openeb5.com/ES/blog/es-proyectos-eb5-valle-rio-grande-metropolis-fronteriza/
+      lang=en-US  https://openeb5.com/ES/blog/es-saronic-technologies-brownsville-port-alpha-eb5/
+      lang=en-US  https://openeb5.com/ES/blog/green-card-como-obtenerla-por-inversion-empleo-o-familia/
+      lang=en-US  https://openeb5.com/ES/blog/guia-de-la-visa-de-inversionista-eb-5-requisitos-costos-y-el-camino-hacia-la-green-card/
+      lang=en-US  https://openeb5.com/ES/blog/inversion-estrategica-con-open-eb5/
+      lang=en-US  https://openeb5.com/ES/blog/mitos-y-realidades-del-programa-eb-5-lo-que-es-y-lo-que-no-es/
+      lang=en-US  https://openeb5.com/ES/blog/por-que-texas-es-el-lugar-ideal-para-invertir-y-obtener-tu-visa-eb5-con-open-eb5/
+      lang=en-US  https://openeb5.com/ES/blog/que-es-la-green-card-y-que-beneficios-ofrece-en-estados-unidos/
+      lang=en-US  https://openeb5.com/ES/blog/que-es-la-visa-eb-5-y-como-funciona-guia-completa-paso-a-paso/
+      lang=en-US  https://openeb5.com/ES/blog/que-pasa-despues-de-obtener-la-green-card-por-eb-5-etapas-y-proximos-pasos/
+      lang=en-US  https://openeb5.com/ES/blog/requisitos-actualizados-para-la-visa-eb-5-en-2025/
+      lang=en-US  https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional-2/
+      lang=en-US  https://openeb5.com/ES/blog/visa-eb-5-inversion-directa-o-centro-regional/
+      lang=en-US  https://openeb5.com/ES/brasil/
+      lang=en-US  https://openeb5.com/ES/chile/
+      lang=en-US  https://openeb5.com/ES/china/
+      lang=en-US  https://openeb5.com/ES/colombia/
+      lang=en-US  https://openeb5.com/ES/contactanos/
+      lang=en-US  https://openeb5.com/ES/corea-del-sur/
+      lang=en-US  https://openeb5.com/ES/cuestionario-para-inversionistas/
+      lang=en-US  https://openeb5.com/ES/eb-5/
+      lang=en-US  https://openeb5.com/ES/eb5-blog/
+      lang=en-US  https://openeb5.com/ES/eb5-blog/page/1/
+      lang=en-US  https://openeb5.com/ES/eb5-blog/page/2/
+      lang=en-US  https://openeb5.com/ES/el-equipo/
+      lang=en-US  https://openeb5.com/ES/espana/
+      lang=en-US  https://openeb5.com/ES/europa/
+      lang=en-US  https://openeb5.com/ES/guia-integral-para-inversiones-eb5/
+      lang=en-US  https://openeb5.com/ES/india/
+      lang=en-US  https://openeb5.com/ES/israel/
+      lang=en-US  https://openeb5.com/ES/lp-guia/
+      lang=en-US  https://openeb5.com/ES/mexico/
+      lang=en-US  https://openeb5.com/ES/midtown-brownsville-ii/
+      lang=en-US  https://openeb5.com/ES/midtown-pharr/
+      lang=en-US  https://openeb5.com/ES/nosotros/
+      lang=en-US  https://openeb5.com/ES/noticias/
+      lang=en-US  https://openeb5.com/ES/oceania/
+      lang=en-US  https://openeb5.com/ES/paises/
+      lang=en-US  https://openeb5.com/ES/pakistan/
+      lang=en-US  https://openeb5.com/ES/peru/
+      lang=en-US  https://openeb5.com/ES/privacy-policy/
+      lang=en-US  https://openeb5.com/ES/proyectos-actuales/
+      lang=en-US  https://openeb5.com/ES/proyectos-actuales/midtown-pharr/
+      lang=en-US  https://openeb5.com/ES/proyectos-colaborativos/
+      lang=en-US  https://openeb5.com/ES/reino-unido/
+      lang=en-US  https://openeb5.com/ES/tag/eb-5/
+      lang=en-US  https://openeb5.com/ES/tag/eb-5/page/2/
+      lang=en-US  https://openeb5.com/ES/taiwan/
+      lang=en-US  https://openeb5.com/ES/terms-of-service/
+      lang=en-US  https://openeb5.com/ES/vietnam/
+
+=== CANONICAL problemas ===
+  MISMATCH  https://openeb5.com/ES/eb5-blog/page/2/
+            canonical -> https://openeb5.com/ES/eb5-blog/
+  MISMATCH  https://openeb5.com/blog/
+            canonical -> https://openeb5.com/category/blog/
+  MISMATCH  https://openeb5.com/eb-5-blog/page/2/
+            canonical -> https://openeb5.com/eb-5-blog/
+
+=== NOINDEX ===
+  noindex, follow                          https://openeb5.com/ES/ES/
+  noindex, follow                          https://openeb5.com/ES/about-us/
+  noindex, follow                          https://openeb5.com/ES/brazil/
+  noindex, follow                          https://openeb5.com/ES/canada/
+  noindex, follow                          https://openeb5.com/ES/collaborative-projects/
+  noindex, follow                          https://openeb5.com/ES/contact-us/
+  noindex, follow                          https://openeb5.com/ES/countries/
+  noindex, follow                          https://openeb5.com/ES/current-projects/
+  noindex, follow                          https://openeb5.com/ES/eb-5-blog/
+  noindex, follow                          https://openeb5.com/ES/europe/
+  noindex, follow                          https://openeb5.com/ES/france/
+  noindex, follow                          https://openeb5.com/ES/investors/
+  noindex, follow                          https://openeb5.com/ES/news/
+  noindex, follow                          https://openeb5.com/ES/programa-eb-5/
+  noindex, follow                          https://openeb5.com/ES/south-korea/
+  noindex, follow                          https://openeb5.com/ES/spain/
+  noindex, follow                          https://openeb5.com/ES/the-complete-guide-to-eb-5-investment/
+  noindex, follow                          https://openeb5.com/ES/the-team/
+  noindex, follow                          https://openeb5.com/ES/turkey/
+  noindex, follow                          https://openeb5.com/ES/united-kingdom/
+  noindex, follow                          https://openeb5.com/ES/venezuela/
+  noindex, follow                          https://openeb5.com/blog/page/2/
+  noindex, follow                          https://openeb5.com/canada/
+  noindex, follow                          https://openeb5.com/france/
+  noindex, follow                          https://openeb5.com/terms/
+  noindex, follow                          https://openeb5.com/turkey/
+  noindex, follow                          https://openeb5.com/venezuela/
+
+=== CONTENIDO THIN (<300 palabras) ===
+     69 palabras  https://openeb5.com/ES/noticias/
+     69 palabras  https://openeb5.com/ES/ES/noticias/
+     73 palabras  https://openeb5.com/brownsville-parkside/
+     73 palabras  https://openeb5.com/current-projects/brownsville-parkside/
+     78 palabras  https://openeb5.com/ES/tag/eb-5/page/2/
+     93 palabras  https://openeb5.com/ES/corea-del-sur/
+     93 palabras  https://openeb5.com/ES/ES/corea-del-sur/
+    122 palabras  https://openeb5.com/ES/reino-unido/
+    122 palabras  https://openeb5.com/ES/ES/reino-unido/
+    125 palabras  https://openeb5.com/ES/lp-guia/
+    133 palabras  https://openeb5.com/ES/espana/
+    133 palabras  https://openeb5.com/ES/ES/espana/
+    135 palabras  https://openeb5.com/ES/brasil/
+    135 palabras  https://openeb5.com/ES/ES/brasil/
+    163 palabras  https://openeb5.com/collaborative-projects/
+    166 palabras  https://openeb5.com/ES/oceania/
+    166 palabras  https://openeb5.com/ES/ES/oceania/
+    175 palabras  https://openeb5.com/oceania/
+    177 palabras  https://openeb5.com/ES/europa/
+    177 palabras  https://openeb5.com/ES/ES/europa/
+    179 palabras  https://openeb5.com/europe/
+    191 palabras  https://openeb5.com/ES/proyectos-colaborativos/
+    191 palabras  https://openeb5.com/ES/ES/proyectos-colaborativos/
+    199 palabras  https://openeb5.com/ES/america/
+    199 palabras  https://openeb5.com/ES/ES/america/
+    200 palabras  https://openeb5.com/ES/asia/
+    200 palabras  https://openeb5.com/ES/ES/asia/
+    202 palabras  https://openeb5.com/america/
+    202 palabras  https://openeb5.com/asia/
+    274 palabras  https://openeb5.com/countries/
+    274 palabras  https://openeb5.com/terms-of-service/
+    275 palabras  https://openeb5.com/ES/contactanos/
+    275 palabras  https://openeb5.com/ES/ES/contactanos/
+    279 palabras  https://openeb5.com/ES/paises/
+    279 palabras  https://openeb5.com/ES/ES/paises/
+    283 palabras  https://openeb5.com/contact-us/
+    283 palabras  https://openeb5.com/lp-contact-us/
+    286 palabras  https://openeb5.com/current-projects/
+    291 palabras  https://openeb5.com/ES/terms-of-service/
+
+=== IMAGENES SIN ALT ===
+  Total img sin alt: 0

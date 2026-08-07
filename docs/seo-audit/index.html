@@ -10,7 +10,7 @@ sitemap: false
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex" />
 <meta name="referrer" content="no-referrer" />
-<title>Auditoría SEO · openeb5.com · v2 · Junio 2026</title>
+<title>Auditoría SEO · openeb5.com + /ES · v4 · Agosto 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -30,7 +30,7 @@ sitemap: false
     --ink4:#8a98ac;
     --brand:#0b2a49;
     --brand-soft:#e8eef5;
-    --accent:#c69749;       /* Gold accent inspired por el logo Open EB5 */
+    --accent:#c69749;       /* Gold accent inspirado por el logo Open EB5 */
     --accent-soft:#f6efde;
     --accent-bright:#e3b770;
     --crit:#dc2626;
@@ -80,6 +80,7 @@ sitemap: false
   .corr{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:18px}
   .corr div{font-size:13px;color:#cfdaea;border-left:3px solid var(--good);padding-left:14px;line-height:1.6}
   .corr div.warn{border-left-color:var(--high)}
+  .corr div.crit{border-left-color:var(--crit)}
   .corr b{color:#ffffff}
 
   /* TABS */
@@ -134,6 +135,7 @@ sitemap: false
   .finding.done .f-title::after{content:" · LISTO";font-size:9.5px;font-weight:700;letter-spacing:1.2px;color:#ffffff;background:var(--good);padding:2px 7px;margin-left:8px;border-radius:2px;vertical-align:middle;text-transform:uppercase;text-decoration:none}
   .finding.partial .f-title::after{content:" · PARCIAL";font-size:9.5px;font-weight:700;letter-spacing:1.2px;color:#ffffff;background:var(--high);padding:2px 7px;margin-left:8px;border-radius:2px;vertical-align:middle;text-transform:uppercase}
   .finding.plan .f-title::after{content:" · PLAN LISTO";font-size:9.5px;font-weight:700;letter-spacing:1.2px;color:#ffffff;background:var(--info);padding:2px 7px;margin-left:8px;border-radius:2px;vertical-align:middle;text-transform:uppercase}
+  .finding.regress .f-title::after{content:" · REGRESIÓN";font-size:9.5px;font-weight:700;letter-spacing:1.2px;color:#ffffff;background:var(--crit);padding:2px 7px;margin-left:8px;border-radius:2px;vertical-align:middle;text-transform:uppercase}
   .f-head{display:flex;gap:14px;align-items:flex-start}
   .chk{flex:none;cursor:pointer;margin-top:1px;position:relative;width:20px;height:20px}
   .chk input{position:absolute;opacity:0;width:20px;height:20px;cursor:pointer;margin:0}
@@ -153,6 +155,7 @@ sitemap: false
   .t-content{background:var(--good-bg);color:var(--good)}
   .t-config{background:var(--high-bg);color:var(--high)}
   .t-seo{background:var(--accent-soft);color:var(--accent)}
+  .t-es{background:var(--violet-bg);color:var(--violet)}
   .t-nodesign{background:#dde7e6;color:#1f4747}
   .t-cliente{background:var(--violet-bg);color:var(--violet)}
   .t-claude{background:var(--info-bg);color:var(--info)}
@@ -160,11 +163,16 @@ sitemap: false
   .f-body p{font-size:13.5px;color:var(--ink3);line-height:1.6}
   .f-body b{color:var(--brand);font-weight:600}
   .f-body code,code{font-family:"JetBrains Mono","SF Mono",Menlo,Consolas,monospace;background:var(--brand-soft);color:var(--brand);border:1px solid var(--border);padding:1px 6px;border-radius:2px;font-size:12px}
+  .f-body ul{list-style:none;display:grid;gap:5px;margin-top:4px}
+  .f-body li{font-size:13px;color:var(--ink3);padding-left:16px;position:relative;line-height:1.55}
+  .f-body li::before{content:"·";position:absolute;left:3px;top:-2px;color:var(--accent);font-size:17px;font-weight:700}
 
   .note{background:var(--accent-soft);border:1px solid var(--border);border-radius:6px;padding:16px 20px;font-size:13.5px;color:var(--ink3);margin:20px 0;line-height:1.65}
   .note b{color:var(--brand)}
   .constraint{background:var(--violet-bg);border:1px solid #d8c7eb;border-radius:6px;padding:16px 20px;font-size:13.5px;color:var(--ink3);margin:0 0 24px;line-height:1.65}
   .constraint b{color:var(--violet)}
+  .alarm{background:var(--crit-bg);border:1px solid #f3bcbc;border-radius:6px;padding:16px 20px;font-size:13.5px;color:#7c1d1d;margin:0 0 24px;line-height:1.65}
+  .alarm b{color:var(--crit)}
 
   /* checkpoints timeline */
   .checkpoints{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:0;border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--bg);box-shadow:0 2px 8px rgba(11,42,73,0.04)}
@@ -191,12 +199,23 @@ sitemap: false
   .phase li::before{content:"·";position:absolute;left:4px;top:-2px;color:var(--accent);font-size:18px;font-weight:700}
   .phase li b{color:var(--brand);font-weight:600}
 
+  /* week block */
+  .week{background:var(--bg-card);border:1px solid var(--border);border-radius:6px;margin-bottom:18px;overflow:hidden;box-shadow:0 1px 2px rgba(11,42,73,0.04)}
+  .week-h{background:var(--bg-soft);border-bottom:1px solid var(--border);padding:16px 22px;display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px}
+  .week-h .wn{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--brand)}
+  .week-h .wd{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);font-weight:700}
+  .week-h .wg{font-size:12.5px;color:var(--ink3);width:100%;line-height:1.55}
+  .week-body{padding:8px 22px 18px}
+  .week-body .finding{margin-top:14px;margin-bottom:0;box-shadow:none}
+
   /* tables */
   table{width:100%;border-collapse:collapse;font-size:13.5px}
   th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--border-soft)}
   th{font-size:10.5px;text-transform:uppercase;letter-spacing:1px;color:var(--ink4);font-weight:700;background:var(--bg-soft);border-bottom:1px solid var(--border)}
   td.r,th.r{text-align:right;font-variant-numeric:tabular-nums}
-  .tw{border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--bg);box-shadow:0 1px 2px rgba(11,42,73,0.04)}
+  .tw{border:1px solid var(--border);border-radius:6px;overflow:hidden;background:var(--bg);box-shadow:0 1px 2px rgba(11,42,73,0.04);margin-bottom:18px}
+  .tw.scroll{overflow-x:auto}
+  td code{font-size:11.5px}
 
   footer{border-top:1px solid var(--border);padding:28px 0 40px;color:var(--ink4);font-size:11.5px;text-align:center;letter-spacing:.4px;margin-top:32px}
   footer b{color:var(--ink3)}
@@ -208,6 +227,7 @@ sitemap: false
     .corr{grid-template-columns:1fr}
     .f-body{padding-left:0}
     .wrap{padding:0 20px}
+    .week-body{padding:8px 14px 18px}
   }
 </style>
 </head>
@@ -217,34 +237,33 @@ sitemap: false
   <div class="wrap hero-inner">
     <div class="hero-top">
       <img src="openeb5-logo-white.png" alt="Open EB5" class="hero-logo" />
-      <div class="eyebrow">SEO Audit · v3 · Mayo 2026 · Verificado 14 Jun 2026 · Fase 4 activa</div>
+      <div class="eyebrow">SEO Audit · v4 · Re-auditado 7 Ago 2026 · EN + ES</div>
     </div>
     <div class="hero-grid">
       <div>
         <h1><span class="accent">Open EB5</span> — Auditoría SEO Técnica</h1>
         <p class="hero-meta">
-          USCIS-Approved EB-5 Regional Center · McAllen, Texas · <strong>openeb5.com</strong><br/>
-          Sector: <strong>YMYL</strong> (Inmigración + Inversión) · Stack: <strong>WordPress + Consultio + Elementor + RevSlider + NitroPack</strong><br/>
-          Preparado por: <strong>Juan Marcos</strong> · SEO Specialist · Plan a <strong>4 meses</strong>
+          USCIS-Approved EB-5 Regional Center · McAllen, Texas · <strong>openeb5.com</strong> + <strong>openeb5.com/ES/</strong><br/>
+          Sector: <strong>YMYL</strong> (Inmigración + Inversión) · Stack: <strong>WordPress + tema custom openeb5 + Elementor + NitroPack</strong><br/>
+          Preparado por: <strong>Juan Marcos</strong> · SEO Specialist · Plan de <strong>30 días</strong> + SOW por fases
         </p>
       </div>
-      <div class="score" id="hero-score"><div><div class="v" id="hero-score-v">62</div><div class="l" id="hero-score-l">/100 · Mejorando</div></div></div>
+      <div class="score" id="hero-score"><div><div class="v" id="hero-score-v">58</div><div class="l" id="hero-score-l">/100 · Mejorando</div></div></div>
     </div>
 
     <div class="banner">
-      <h4>Fuentes verificadas</h4>
+      <h4>Fuentes verificadas · 7 Ago 2026</h4>
       <div class="sources">
-        <span class="pill">PageSpeed Insights · mobile + desktop</span>
-        <span class="pill">curl live · headers + HTML</span>
-        <span class="pill">Yoast site audit</span>
-        <span class="pill">grep wp-content/ local</span>
-        <span class="pill">SEMrush · Ahrefs</span>
-        <span class="pill">Rich Results Test</span>
-        <span class="pill">Lighthouse mobile + desktop</span>
+        <span class="pill">Crawl propio · 215 URLs (93 EN + 122 ES)</span>
+        <span class="pill">cURL live · headers + HTML real</span>
+        <span class="pill">Yoast sitemap_index.xml</span>
+        <span class="pill">Ahrefs Site Explorer</span>
+        <span class="pill">grep schema JSON-LD</span>
+        <span class="pill">Comparativa asset stack EN vs ES</span>
       </div>
       <div class="corr">
-        <div><b>Avance Fase 1 + 2 + 3 + 4 (14 Jun 2026).</b> Child theme activo · NitroPack <code>HIT</code> + Combine CSS · 6 plugins zombies eliminados (Crypto, Meks, Smart Slider, MonsterInsights, Booked, weimg) · 7/9 BLOCKS dequeue activos · Schema graph enriquecido (<code>FinancialService</code> + <code>LocalBusiness</code> + <code>Person</code>) · <code>llms.txt</code> + <code>security.txt</code> + 8 AI crawlers named · FAQ schema auto · Hero Camino B (sin slider, ahorro 516 KB JS) · Topbar phone CTA · Fonts <code>display=swap</code> global · 16 <code>@type</code> distintos en HTML. <b>Mobile 14 → 46 · Desktop 28 → 62 · Scripts 76 → 59 · Styles 72 → 12 · Payload 12 MB → 3.5 MB · CLS 0.039</b>.</div>
-        <div class="warn"><b>Lo que sigue pendiente.</b> NitroPack Combine JS + Delay JS + Critical CSS (config panel cliente) · AccelerateWP cPanel OFF · Cloudflare 6 security headers · ElementsKit Lite (rompe Countries al desactivar) · Yoast Site Representation + homepage title · Disavow 94 dominios GSC · Rewrite pillar guide YMYL · Author bios + Person schema sitewide · USCIS RC ID + logo cuadrado para Knowledge Panel.</div>
+        <div><b>Confirmado en vivo lo que ya se hizo.</b> Tema custom <code>openeb5</code> activo en EN y ES · schema graph rico (17 <code>@type</code>: <code>FinancialService</code> + <code>LocalBusiness</code> + <code>Person</code> + <code>Article</code> + <code>BreadcrumbList</code>) · <code>llms.txt</code> publicado · <b>0 imágenes sin alt en 215 páginas</b> · sitemap EN limpio (65/67 responden 200) · blog EN migrado de <code>/2025/mm/dd/</code> a <code>/blog/</code> con 301 correctos · canonicals EN correctos.</div>
+        <div class="crit"><b>Lo que la re-auditoría destapó.</b> El sitio <b>/ES/ nunca recibió el trabajo de las Fases 1-4</b>: carga <b>24 bundles de plugins vs 10 en EN</b> (revslider, WooCommerce, booked, YITH siguen vivos ahí), va con <code>Cache-Control: no-store</code> (sin caché), <b>0 URLs ES en el sitemap</b>, <b>100% de las páginas ES declaran <code>lang="en-US"</code></b>, hreflang invertido generando un espacio fantasma <code>/ES/ES/</code>, y <b>21 enlaces rotos internos</b>. Y es justamente <b>/ES/ lo único que rankea</b> (#6-#9 para "eb5" en MX, CL, AR, ES).</div>
       </div>
     </div>
   </div>
@@ -252,11 +271,12 @@ sitemap: false
 
 <nav class="tabs">
   <div class="wrap tabs-inner">
-    <button class="tab active" data-tab="p-summary">Resumen<small>diagnóstico</small></button>
-    <button class="tab" data-tab="p-findings">Hallazgos<small>7 áreas</small></button>
-    <button class="tab" data-tab="p-plan">Plan de Acción<small>P0 → P3 (47)</small></button>
-    <button class="tab" data-tab="p-sow">SOW<small>4 meses · fases</small></button>
-    <button class="tab" data-tab="p-checklist">Checklist<small>tracking total</small></button>
+    <button class="tab active" data-tab="p-summary">Resumen<small>estado hoy</small></button>
+    <button class="tab" data-tab="p-done">Ya hecho<small>vs pendiente</small></button>
+    <button class="tab" data-tab="p-findings">Hallazgos<small>EN · 7 áreas</small></button>
+    <button class="tab" data-tab="p-es">Español /ES<small>auditoría propia</small></button>
+    <button class="tab" data-tab="p-plan">Plan 30 días<small>4 semanas · 12 tareas</small></button>
+    <button class="tab" data-tab="p-sow">SOW<small>alcance y entregables</small></button>
   </div>
 </nav>
 
@@ -264,746 +284,1028 @@ sitemap: false
   <div class="gp">
     <span class="gp-count" id="gp-count">0 / 0</span>
     <div class="gp-bar-wrap"><div class="gp-bar" id="gp-bar"></div></div>
-    <small>tareas completadas</small>
+    <small>progreso global</small>
   </div>
 </div>
 
-<div class="wrap">
-
-<!-- ============ SUMMARY ============ -->
+<!-- ============ RESUMEN ============ -->
 <section class="panel active" id="p-summary">
+<div class="wrap">
   <h2>Resumen ejecutivo</h2>
-  <p class="sub">Auditoría inicial <b>Mayo 2026</b>: Health Score <b>29/100</b>, Authority Score <b>2/100</b>, 20 keywords orgánicas, 0 tráfico estimado. Al <b>14 Junio 2026</b>, ejecutadas Fases 1 → 4 (Claude Code + cliente): child theme con 14 secciones funcionales, dequeues 7/9, Camino B hero estático sustituye Slider Revolution (-516 KB JS), 6 plugins zombies eliminados, schema graph enriquecido con FinancialService + LocalBusiness + Person + FAQ auto, llms.txt + security.txt publicados, 8 AI crawlers named en robots.txt. <b>Mobile 14 → 46 · Desktop 28 → 62 · Scripts 76 → 59 · Styles 72 → 12 · Payload 12 MB → 3.5 MB · NitroPack HIT · CLS 0.039</b>.</p>
+  <p class="sub">Re-auditoría completa del <b>7 de agosto de 2026</b>, ejecutada sobre un crawl propio de <b>215 URLs reales</b> (93 en inglés, 122 en español). La auditoría de mayo cubrió solo la versión en inglés. Esta es la <b>primera vez que se audita <code>/ES/</code> con el mismo rigor</b>, y ahí está concentrado el problema.</p>
 
-  <div class="note"><b>Lo que queda:</b> NitroPack config avanzada (Combine JS + Delay JS + Critical CSS) · AccelerateWP cPanel OFF · Cloudflare 6 security headers · ElementsKit Lite (rompe widget Countries — migrar a Pro o Custom HTML) · Yoast Site Representation + homepage title fix · Disavow 94 dominios GSC · USCIS RC ID + logo cuadrado para Knowledge Panel · Rewrite pillar guide YMYL 3,500 palabras · Author bios + Person schema sitewide.</div>
+  <div class="alarm">
+    <b>El hallazgo que cambia la prioridad.</b> Según Ahrefs, el dominio tiene <b>4 keywords orgánicas</b> en total. De esas, <b>5 de las 7 posiciones registradas apuntan a <code>/ES/</code></b>: la home en español rankea <b>#6 en Argentina, #7 en España, #8 en Chile y #9 en México</b> para "eb5", y un post en español rankea #27 en EE. UU. para "que es la green card" (500 búsquedas/mes). <b>El activo orgánico real de Open EB5 es el sitio en español</b>, y es exactamente el que quedó fuera de todas las optimizaciones: sin sitemap, sin caché, con el stack de plugins viejo completo y con el idioma mal declarado.
+  </div>
 
-  <h3>Hallazgos clave (verificados 14 Jun 2026)</h3>
+  <h3>Estado en números</h3>
   <div class="grid g4">
-    <div class="stat bl good"><div class="v vg">HIT</div><div class="k">NitroPack X-Cache</div><div class="d">Drop-in + Combine CSS · styles 72 → 12 (-83%) · scripts 76 → 59.</div></div>
-    <div class="stat bl good"><div class="v vg">16</div><div class="k">Schema @types en home</div><div class="d">Org + FinSvc + LocalBus + Person + 9 Country + Geo + Hours. Era 11.</div></div>
-    <div class="stat bl good"><div class="v vg">200</div><div class="k">llms.txt + security.txt</div><div class="d">8 AI crawlers named en robots.txt (GPTBot, ClaudeBot, Perplexity, etc.).</div></div>
-    <div class="stat bl good"><div class="v vg">6</div><div class="k">Plugins zombies eliminados</div><div class="d">Crypto, Meks, Smart Slider, MonsterInsights, Booked, weimg (-197 MB disco).</div></div>
-    <div class="stat bl good"><div class="v vg">404</div><div class="k">PII PDFs + wp-json users</div><div class="d">30+ questionnaires bloqueados · enumeration cerrada · CLS 0.039.</div></div>
-    <div class="stat bl high"><div class="v vh">7/9</div><div class="k">BLOCKS dequeue activos</div><div class="d">#1-#3 + #5 + #6 + #8 + #9. Falta #4 magnific + #7 ElementsKit (QA).</div></div>
-    <div class="stat bl high"><div class="v vh">46/62</div><div class="k">Lighthouse Mobile/Desktop</div><div class="d">+32 mobile · +34 desktop. Target 75/90 con NitroPack final.</div></div>
-    <div class="stat bl high"><div class="v vh">cPanel</div><div class="k">AccelerateWP pendiente</div><div class="d">Confirmación OFF + NitroPack Combine JS + Critical CSS pendiente.</div></div>
+    <div class="stat bl good"><div class="v vg">215</div><div class="k">URLs crawleadas</div><div class="d">93 EN + 122 ES. Cobertura completa de ambos idiomas.</div></div>
+    <div class="stat bl crit"><div class="v vc">27</div><div class="k">Enlaces rotos (404)</div><div class="d">6 en inglés + 21 en español. Todos internos, todos corregibles.</div></div>
+    <div class="stat bl crit"><div class="v vc">0</div><div class="k">URLs ES en sitemap</div><div class="d">Las ~40 páginas en español no se le declaran a Google.</div></div>
+    <div class="stat bl crit"><div class="v vc">100%</div><div class="k">Páginas ES con lang erróneo</div><div class="d">Las 122 declaran <code>lang="en-US"</code> siendo español.</div></div>
+    <div class="stat bl high"><div class="v vh">24 vs 10</div><div class="k">Bundles de plugins ES vs EN</div><div class="d">ES sigue cargando revslider, WooCommerce, booked, YITH.</div></div>
+    <div class="stat bl high"><div class="v vh">no-store</div><div class="k">Caché en /ES/</div><div class="d">Cada visita regenera la página entera. EN sí cachea.</div></div>
+    <div class="stat bl good"><div class="v vg">0</div><div class="k">Imágenes sin alt</div><div class="d">En las 215 páginas. Trabajo previo confirmado.</div></div>
+    <div class="stat bl good"><div class="v vg">17</div><div class="k">Tipos de schema activos</div><div class="d">FinancialService, LocalBusiness, Person, Article, Breadcrumb.</div></div>
   </div>
 
-  <h3>Diagnóstico por categoría</h3>
-  <div class="tw">
-    <table>
-      <thead><tr><th>Dimensión</th><th class="r">Peso</th><th class="r">May 2026</th><th class="r">11 Jun</th><th class="r">14 Jun</th><th>Lectura</th></tr></thead>
-      <tbody>
-        <tr><td>Technical SEO</td><td class="r">22%</td><td class="r vc">30</td><td class="r vh">62</td><td class="r vg">78</td><td>Cache HIT · users cerrado · 301 server-side · meta gen off · 7/9 dequeues</td></tr>
-        <tr><td>Content / E-E-A-T</td><td class="r">23%</td><td class="r vh">35</td><td class="r vh">38</td><td class="r vh">42</td><td>FAQ schema auto · pillar guide rewrite YMYL pendiente · 18 country thin</td></tr>
-        <tr><td>On-Page SEO</td><td class="r">20%</td><td class="r vc">25</td><td class="r vh">42</td><td class="r vh">48</td><td>Title homepage + Yoast Site Rep aún pendientes cliente</td></tr>
-        <tr><td>Schema / Structured Data</td><td class="r">10%</td><td class="r vc">25</td><td class="r vh">55</td><td class="r vg">90</td><td>FinSvc + LocalBus + Person + FAQ auto · 16 @types · areaServed 9 países</td></tr>
-        <tr><td>Performance / CWV</td><td class="r">10%</td><td class="r vc">25</td><td class="r vh">45</td><td class="r vh">68</td><td>Mobile 46 · Camino B · 6 plugins fuera · scripts 76 → 59 · NitroPack Combine JS pendiente</td></tr>
-        <tr><td>AI Search Readiness (GEO)</td><td class="r">10%</td><td class="r vc">28</td><td class="r vh">40</td><td class="r vg">82</td><td>llms.txt · security.txt · 8 AI crawlers named · schema graph rico</td></tr>
-        <tr><td>Images</td><td class="r">5%</td><td class="r vh">30</td><td class="r vh">52</td><td class="r vh">62</td><td>WebP fallback filter activo · 7 PNG pesados pendientes WebP</td></tr>
-        <tr style="font-weight:700"><td>TOTAL ponderado</td><td class="r">100%</td><td class="r vc">29</td><td class="r vh">48</td><td class="r vg">~62</td><td>Crítico → Recuperación → <b>Mejorando</b></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h3>Engagement checkpoints</h3>
-  <p class="sub">Dónde empezamos, dónde estamos hoy, hacia dónde apuntamos.</p>
+  <h3>Evolución del score</h3>
   <div class="checkpoints">
-    <div class="cp cp-crit">
-      <div class="cp-lbl">Auditoría inicial</div>
-      <div class="cp-when">Mayo 2026</div>
-      <div class="cp-score">29<small>/100</small></div>
-      <div class="cp-note">Crítico — <code>Cache-Control: no-store</code> · 30+ PDFs PII públicos · 0 hreflang · canonical bug autor · LCP 14.9s · title "OpenEB5 - openeb5".</div>
-    </div>
-    <div class="cp cp-now cp-good">
-      <div class="cp-lbl">Hoy (Fase 4)</div>
-      <div class="cp-when">14 Jun 2026</div>
-      <div class="cp-score">62<small>/100</small></div>
-      <div class="cp-note">Mobile 46 · 6 plugins zombies fuera · 7/9 dequeues · 16 schema @types · llms.txt + security.txt + 8 AI crawlers · NitroPack HIT.</div>
-    </div>
-    <div class="cp cp-warn">
-      <div class="cp-lbl">Día 30 target</div>
-      <div class="cp-when">11 Jul 2026</div>
-      <div class="cp-score">75<small>/100</small></div>
-      <div class="cp-note">NitroPack Combine+Delay+Critical CSS · AccelerateWP OFF · Cloudflare headers · Title homepage · Yoast Site Rep.</div>
-    </div>
-    <div class="cp cp-good">
-      <div class="cp-lbl">Día 90 target</div>
-      <div class="cp-when">11 Sep 2026</div>
-      <div class="cp-score">88<small>/100</small></div>
-      <div class="cp-note">Pillar guide YMYL · Author Person schema · Bios sitewide · Disavow 94 · sitemap ES · GBP McAllen · IIUSA member.</div>
-    </div>
+    <div class="cp cp-crit"><div class="cp-lbl">Baseline</div><div class="cp-when">Mayo 2026</div><div class="cp-score">29<small>/100</small></div><div class="cp-note">Auditoría inicial. Solo inglés. Sin caché, 76 scripts, payload 12 MB.</div></div>
+    <div class="cp cp-warn"><div class="cp-lbl">Fases 1-4</div><div class="cp-when">14 Jun 2026</div><div class="cp-score">62<small>/100</small></div><div class="cp-note">Tema custom, 6 plugins fuera, 7/9 dequeues, schema enriquecido. Medido solo sobre EN.</div></div>
+    <div class="cp cp-now cp-warn"><div class="cp-lbl">Hoy · alcance real</div><div class="cp-when">7 Ago 2026</div><div class="cp-score">58<small>/100</small></div><div class="cp-note">Score de la propiedad completa (EN + ES). Baja respecto a 62 porque ahora se mide también el español, que arrastra los problemas.</div></div>
+    <div class="cp cp-good"><div class="cp-lbl">Meta 30 días</div><div class="cp-when">5 Sep 2026</div><div class="cp-score">78<small>/100</small></div><div class="cp-note">Tras las 12 tareas del plan de 4 semanas.</div></div>
   </div>
 
-  <h3>Top 5 quick wins (≤ 4 h cada uno)</h3>
-  <div class="tw">
+  <div class="note">
+    <b>Por qué el score baja de 62 a 58.</b> No hubo retroceso en el trabajo hecho. El 62 de junio se midió sobre la versión en inglés únicamente. El 58 de hoy mide la propiedad completa incluyendo <code>/ES/</code>, que nunca se había auditado y que concentra los problemas graves. Es un cambio de alcance de la medición, no una pérdida. Dicho eso, sí hay <b>una regresión real</b>: el bloque de AI crawlers que se añadió a <code>robots.txt</code> en junio ya no está en el archivo en vivo.
+  </div>
+
+  <h3>Los 5 problemas que más pesan hoy</h3>
+  <div class="tw scroll">
     <table>
-      <thead><tr><th>#</th><th>Quick win</th><th class="r">Esfuerzo</th><th>Estado</th></tr></thead>
+      <thead><tr><th>#</th><th>Problema</th><th>Alcance</th><th>Impacto</th><th>Semana</th></tr></thead>
       <tbody>
-        <tr><td>1</td><td>Yoast Site Representation: Org name "Open EB5" + phone + address</td><td class="r">1 h</td><td><span class="t t-cliente">Pendiente cliente</span></td></tr>
-        <tr><td>2</td><td>Homepage title + meta description</td><td class="r">30 min</td><td><span class="t t-cliente">Pendiente cliente</span></td></tr>
-        <tr><td>3</td><td>NitroPack: Combine JS ON + Delay JS + Critical CSS</td><td class="r">15 min</td><td><span class="t t-cliente">Pendiente cliente</span></td></tr>
-        <tr><td>4</td><td>Eliminar plugins inútiles (6 de 7 hechos · falta ElementsKit Lite)</td><td class="r">5 min</td><td><span class="t t-claude">✅ 6 hechos</span></td></tr>
-        <tr><td>5</td><td>Publicar /llms.txt + /.well-known/security.txt</td><td class="r">5 min</td><td><span class="t t-claude">✅ Vivo 14 Jun</span></td></tr>
-        <tr><td>6</td><td>Schema FinancialService + LocalBusiness + areaServed 9 países</td><td class="r">2 h</td><td><span class="t t-claude">✅ §14 vivo</span></td></tr>
-        <tr><td>7</td><td>AI crawlers named en robots.txt (8 bots)</td><td class="r">15 min</td><td><span class="t t-claude">✅ §12 vivo</span></td></tr>
+        <tr><td class="r">1</td><td><b>Las páginas en español no están en el sitemap</b></td><td>~40 URLs</td><td class="vc">Crítico · Google no tiene la lista del sitio que sí rankea</td><td>S1</td></tr>
+        <tr><td class="r">2</td><td><b>Todo <code>/ES/</code> declara <code>lang="en-US"</code></b></td><td>122 páginas</td><td class="vc">Crítico · señal de idioma equivocada en el mercado hispano</td><td>S1</td></tr>
+        <tr><td class="r">3</td><td><b>27 enlaces internos rotos</b> (<code>/terms/</code> desde 90 páginas)</td><td>EN + ES</td><td class="vh">Alto · desperdicia crawl budget y rompe la navegación</td><td>S2</td></tr>
+        <tr><td class="r">4</td><td><b>hreflang invertido + espacio fantasma <code>/ES/ES/</code></b></td><td>38 URLs duplicadas</td><td class="vh">Alto · duplicación y señal de idioma contradictoria</td><td>S3</td></tr>
+        <tr><td class="r">5</td><td><b><code>/ES/</code> sin caché y con 24 bundles de plugins</b></td><td>122 páginas</td><td class="vh">Alto · el sitio que rankea es el más lento</td><td>S4</td></tr>
       </tbody>
     </table>
   </div>
+
+  <h3>Rendimiento medido en vivo</h3>
+  <div class="tw scroll">
+    <table>
+      <thead><tr><th>URL</th><th class="r">TTFB</th><th class="r">Scripts</th><th class="r">Hojas CSS</th><th>Caché</th></tr></thead>
+      <tbody>
+        <tr><td><code>/</code></td><td class="r">2,11 s</td><td class="r">18</td><td class="r">28</td><td>NitroPack <code>MISS</code></td></tr>
+        <tr><td><code>/eb-5/</code></td><td class="r">2,11 s</td><td class="r">18</td><td class="r">28</td><td>NitroPack</td></tr>
+        <tr><td><code>/current-projects/</code></td><td class="r">1,39 s</td><td class="r">18</td><td class="r">28</td><td>NitroPack</td></tr>
+        <tr><td><code>/ES/</code></td><td class="r vc">1,94 s</td><td class="r vc">29</td><td class="r vc">64</td><td class="vc"><code>no-store, no-cache</code></td></tr>
+        <tr><td><code>/ES/eb-5/</code></td><td class="r vc">1,64 s</td><td class="r vc">27</td><td class="r vc">58</td><td class="vc"><code>no-store, no-cache</code></td></tr>
+        <tr><td><code>/ES/proyectos-actuales/</code></td><td class="r vc">1,64 s</td><td class="r vc">27</td><td class="r vc">57</td><td class="vc"><code>no-store, no-cache</code></td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="sub">El TTFB de <b>1,4 a 2,1 segundos</b> es alto en ambos idiomas (el objetivo razonable es por debajo de 0,8 s). En español se suma que la página no se cachea nunca y que carga más del doble de hojas de estilo.</p>
+</div>
 </section>
 
-<!-- ============ HALLAZGOS ============ -->
-<section class="panel" id="p-findings">
-  <h2>Hallazgos por categoría</h2>
-  <p class="sub">7 dimensiones auditadas en mayo 2026. Cross-referenciadas con el trabajo de Fase 1 + Fase 2. <b>Cero cambios de diseño</b> en lo que ya está hecho — todo via child theme.</p>
-  <div class="constraint"><b>Regla del proyecto:</b> NO cambiar diseño · NO romper · NO tocar theme padre · NO eliminar plugins desde Claude. Cada cambio es archivo nuevo o snippet reversible — <code>git reset --hard 982d36b6</code> total disponible.</div>
+<!-- ============ YA HECHO VS PENDIENTE ============ -->
+<section class="panel" id="p-done">
+<div class="wrap">
+  <h2>Qué ya hicimos y qué falta</h2>
+  <p class="sub">Todo lo de esta sección está <b>verificado contra el sitio en vivo el 7 de agosto de 2026</b>, no contra las notas de trabajo. Donde el estado real difiere de lo que decía el reporte anterior, se indica.</p>
   <div class="panel-progress"></div>
 
-  <h3>1 · Technical SEO</h3>
+  <h3>Completado y confirmado en vivo</h3>
 
-  <article class="finding sev-crit done" id="f-cache">
+  <div class="finding sev-low done" id="d-theme">
     <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Cache-Control: no-store + Expires 1981 destruye TTFB sitewide</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-claude">Claude (Fase 1)</span></div></div>
-      <span class="f-time">15 min</span>
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Tema custom <code>openeb5</code> desplegado y activo</div>
+        <div class="tags"><span class="t t-dev">Técnico</span><span class="t t-claude">Claude + cliente</span></div>
+      </div>
+      <span class="f-time">Fases 1-4</span>
+    </div>
+    <div class="f-body"><p>Confirmado: tanto <code>/</code> como <code>/ES/</code> sirven desde <code>wp-content/themes/openeb5</code>. El tema reemplazó a Consultio. Sustituyó Slider Revolution por un hero estático en la versión inglesa.</p></div>
+  </div>
+
+  <div class="finding sev-low done" id="d-schema">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Schema JSON-LD enriquecido y funcionando</div>
+        <div class="tags"><span class="t t-seo">Schema</span><span class="t t-claude">Claude</span></div>
+      </div>
+      <span class="f-time">Fase 4</span>
     </div>
     <div class="f-body">
-      <p><b>Problema.</b> Plugin Booked v3.0.0 ejecuta <code>session_start()</code> global → cookie <code>PHPSESSID</code> + <code>Cache-Control: no-store</code>. Anula NitroPack y AccelerateWP.</p>
-      <p><b>Verificado 11 Jun.</b> <code>curl -I https://openeb5.com/</code> → <code>Cache-Control: no-cache</code> (ya no <code>no-store</code>) · <code>X-Nitro-Cache: HIT</code> · <code>X-Nitro-Cache-From: drop-in</code> · sin <code>Set-Cookie: PHPSESSID</code>. NitroPack drop-in sirve antes de PHP.</p>
+      <p>17 tipos distintos detectados en el HTML en vivo. En home: <code>FinancialService</code>, <code>LocalBusiness</code>, <code>Organization</code>, <code>Person</code> ×2, <code>GeoCoordinates</code>, <code>OpeningHoursSpecification</code>, <code>VideoObject</code>, <code>SearchAction</code> y 21 nodos <code>Country</code>. En los posts se suma <code>Article</code> + <code>BreadcrumbList</code>.</p>
+      <p><b>Matiz.</b> La home en español tiene el mismo grafo <b>menos el nodo <code>Organization</code></b>. Conviene igualarlo.</p>
     </div>
-  </article>
+  </div>
 
-  <article class="finding sev-high partial" id="f-headers">
+  <div class="finding sev-low done" id="d-alt">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">6 security headers ausentes (HSTS, CSP, XFO, XCTO, RP, PP)</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-cliente">Cloudflare cliente</span></div></div>
-      <span class="f-time">30 min cliente</span>
+      <div class="f-main">
+        <div class="f-title">Accesibilidad de imágenes: 0 imágenes sin <code>alt</code></div>
+        <div class="tags"><span class="t t-content">Contenido</span><span class="t t-good">Verificado</span></div>
+      </div>
+      <span class="f-time">Fase 3</span>
     </div>
-    <div class="f-body">
-      <p><b>Plan.</b> Cloudflare → Rules → Transform Rules → Modify Response Headers. CSP en <code>Report-Only</code> 1 semana antes de enforce. Detalle en <code>reports/technical-seo.md</code>.</p>
-    </div>
-  </article>
+    <div class="f-body"><p>Se revisaron las 215 páginas del crawl. <b>Ninguna imagen sin atributo <code>alt</code></b>, ni en inglés ni en español. Este punto se puede dar por cerrado.</p></div>
+  </div>
 
-  <article class="finding sev-high done" id="f-generator">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">6 meta generator tags exponen versiones exactas de WP/WC/Elementor/RevSlider/SiteKit/Redux</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-claude">Claude (Fase 1)</span></div></div>
-      <span class="f-time">10 min</span>
-    </div>
-    <div class="f-body">
-      <p><b>Solución.</b> <code>functions.php §4</code>: <code>remove_action('wp_head','wp_generator')</code> + Yoast debug markers off.</p>
-      <p><b>Verificado 11 Jun.</b> <code>grep 'meta name="generator" content="WordPress'</code> en home: 0 resultados. Solo quedan Redux/SiteKit/Elementor (aceptables; los críticos WP+WC removidos).</p>
-    </div>
-  </article>
-
-  <article class="finding sev-high done" id="f-hreflang">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Sin hreflang en EN/ES + 18 country pages → cannibalization</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-claude">Claude (Fase 2 §7.2)</span><span class="t t-cliente">Ruta 1 cliente</span></div></div>
-      <span class="f-time">10 min código</span>
-    </div>
-    <div class="f-body">
-      <p><b>Verificación.</b> <code>curl -s https://openeb5.com/ | grep -c hreflang</code> = 0 con plugin DAEXT. Hipótesis: NitroPack Minify HTML los borra.</p>
-      <p><b>Ruta 2 ejecutada (Claude).</b> <code>functions.php §7.2</code> imprime 3 hreflang en home (en/es/x-default) priority 5. Activa al subir el archivo.</p>
-      <p><b>Ruta 1 paralela.</b> Desactivar NitroPack Minify HTML para que DAEXT vuelva a imprimir. Si Ruta 1 funciona, comentar §7.2.</p>
-    </div>
-  </article>
-
-  <article class="finding sev-med plan" id="f-sitemap-es">
+  <div class="finding sev-low done" id="d-blogmigr">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">/ES/ (200) NO está en sitemap · /ES/about-us/ y otras hijas 404</div>
-        <div class="tags"><span class="t t-med">Medium</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">2-3 h cliente</span>
+      <div class="f-main">
+        <div class="f-title">Migración de URLs del blog con 301 correctos</div>
+        <div class="tags"><span class="t t-dev">Técnico</span><span class="t t-good">Verificado</span></div>
+      </div>
+      <span class="f-time">Fase 4</span>
     </div>
-    <div class="f-body">
-      <p><b>Plan.</b> Auditar 3 hipótesis Yoast → crear 5 páginas <code>/ES/*</code> faltantes → limpiar sitemap (6 CPTs basura) → resubmit GSC → 301 <code>/es/</code> → <code>/ES/</code>. Detalle <code>reports/B2-sitemap-ES.md</code>.</p>
-    </div>
-  </article>
+    <div class="f-body"><p>Las URLs viejas con fecha (<code>/2025/07/03/…</code>) redirigen con 301 a <code>/blog/…</code> en inglés y a <code>/ES/blog/…</code> en español. Sin cadenas de redirección. Bien resuelto.</p></div>
+  </div>
 
-  <article class="finding sev-high done" id="f-wp-json">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">/wp-json/wp/v2/users/ abierto: enumeration de usuarios + canonical roto user_open</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-claude">Claude (Fase 1 + 2)</span></div></div>
-      <span class="f-time">15 min</span>
-    </div>
-    <div class="f-body">
-      <p><b>Solución.</b> <code>functions.php §5</code> filter <code>rest_endpoints</code> cierra endpoint para anónimos. <code>§7.1</code> safety-net intercepta canonical roto <code>/author/yarrdo/</code> y redirige a autor real (ID 5).</p>
-      <p><b>Verificado.</b> <code>curl -sI .../wp-json/wp/v2/users/</code> → 404. Ningún plugin activo afectado.</p>
-    </div>
-  </article>
-
-  <h3>2 · Content Quality & E-E-A-T</h3>
-
-  <article class="finding sev-crit plan" id="f-pillar">
+  <div class="finding sev-low done" id="d-sitemapen">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Pillar guide /the-complete-guide-to-eb-5-investment/ ~1,300 palabras (debe ser 3,500-5,000 YMYL)</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-content">Content</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">16 h senior writer</span>
+      <div class="f-main">
+        <div class="f-title">Sitemap en inglés limpio</div>
+        <div class="tags"><span class="t t-dev">Técnico</span><span class="t t-good">Verificado</span></div>
+      </div>
+      <span class="f-time">Fase 2</span>
     </div>
-    <div class="f-body">
-      <p><b>Faltantes:</b> TEA no definido (usado 4×), EB-5 Reform Act 2022 nunca mencionado, 0 citas USCIS.gov, sin tabla comparativa Regional Center vs Direct, sin FAQ. Detalle <code>reports/content-eeat.md</code>.</p>
-    </div>
-  </article>
+    <div class="f-body"><p>67 URLs declaradas, <b>65 responden 200</b>. Solo 2 son redirecciones (<code>/brownsville-parkside/</code> y <code>/midtown-pharr/</code>, que ahora viven bajo <code>/current-projects/</code>). Corrección menor, va en el plan.</p></div>
+  </div>
 
-  <article class="finding sev-high plan" id="f-team">
+  <div class="finding sev-low done" id="d-llms">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">/the-team/: solo 2 bios de 10 staff · sin attorney inmigratorio · sin securities counsel</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-content">E-E-A-T</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">8 h</span>
+      <div class="f-main">
+        <div class="f-title"><code>llms.txt</code> publicado y accesible</div>
+        <div class="tags"><span class="t t-seo">GEO</span><span class="t t-claude">Claude</span></div>
+      </div>
+      <span class="f-time">Fase 4</span>
     </div>
-  </article>
+    <div class="f-body"><p>Responde 200 con el contenido correcto: descripción de la organización y lista de páginas canónicas. <b>Pendiente</b>: está fechado <code>2026-06-14</code>, no incluye ninguna URL en español y no menciona la aprobación I-956F de Midtown Pharr.</p></div>
+  </div>
 
-  <article class="finding sev-high plan" id="f-author">
+  <h3>Pendiente o incompleto</h3>
+
+  <div class="finding sev-crit regress" id="d-robots">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">0 author bylines en blog posts · sin "Last updated" visible</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-content">Trust</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">4 h</span>
-    </div>
-  </article>
-
-  <article class="finding sev-med plan" id="f-aboutus">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">/about-us/ ranks accidentalmente para "dunkin donuts harlingen tx" — off-topic</div>
-        <div class="tags"><span class="t t-med">Medium</span><span class="t t-content">Content</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">30 min</span>
-    </div>
-  </article>
-
-  <article class="finding sev-med plan" id="f-countries">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">18 country pages (programmatic) en riesgo de thin content</div>
-        <div class="tags"><span class="t t-med">Medium</span><span class="t t-content">Content</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">30 h top 5</span>
-    </div>
-  </article>
-
-  <h3>3 · On-Page SEO</h3>
-
-  <article class="finding sev-crit plan" id="f-title">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Homepage title "OpenEB5 - openeb5" (17 chars, lowercase, sin keywords)</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-content">CTR</span><span class="t t-cliente">Cliente</span></div></div>
+      <div class="f-main">
+        <div class="f-title">El bloque de AI crawlers desapareció de <code>robots.txt</code></div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-seo">GEO</span><span class="t t-config">Config</span></div>
+      </div>
       <span class="f-time">30 min</span>
     </div>
     <div class="f-body">
-      <p><b>Propuesto.</b> <code>USCIS-Approved EB-5 Regional Center | Open EB5 — Texas</code> + meta 155 chars.</p>
+      <p>El reporte de junio registraba "8 AI crawlers named en robots.txt". El archivo en vivo hoy es el bloque por defecto de Yoast, sin ninguna directiva de agentes de IA:</p>
+      <p><code># START YOAST BLOCK · User-agent: * · Disallow: · Sitemap: https://openeb5.com/sitemap_index.xml · # END YOAST BLOCK</code></p>
+      <p>Probable causa: una actualización de Yoast o del tema reescribió el archivo virtual. <b>Hay que volver a añadirlo y esta vez fijarlo</b> vía filtro <code>robots_txt</code> en el tema para que no se pierda otra vez.</p>
     </div>
-  </article>
+  </div>
 
-  <article class="finding sev-high plan" id="f-yoast-org">
+  <div class="finding sev-crit" id="d-essitemap">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Yoast Organization name lowercase + sin teléfono ni dirección</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-config">Yoast</span><span class="t t-cliente">Cliente</span></div></div>
+      <div class="f-main">
+        <div class="f-title">Ninguna URL en español está declarada en el sitemap</div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">2 h</span>
+    </div>
+    <div class="f-body"><p>El <code>sitemap_index.xml</code> lista 4 sub-sitemaps con 67 URLs. <b>Cero contienen <code>/ES/</code></b>. Detalle completo en la pestaña <b>Español /ES</b>.</p></div>
+  </div>
+
+  <div class="finding sev-crit" id="d-eslang">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Las 122 páginas en español declaran <code>lang="en-US"</code></div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
       <span class="f-time">1 h</span>
     </div>
-  </article>
+    <div class="f-body"><p>Sin excepciones: el crawl encontró <code>en-US</code> en el 100% de las páginas, incluidas las que rankean en México y Chile.</p></div>
+  </div>
 
-  <article class="finding sev-med plan" id="f-meta-15">
+  <div class="finding sev-high" id="d-esperf">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Meta descriptions ausentes en 15 pages clave</div>
-        <div class="tags"><span class="t t-med">Medium</span><span class="t t-content">Meta</span><span class="t t-cliente">Cliente</span></div></div>
+      <div class="f-main">
+        <div class="f-title">Las optimizaciones de rendimiento no llegaron a <code>/ES/</code></div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">4-6 h</span>
+    </div>
+    <div class="f-body">
+      <p>Los dequeues de las Fases 1-4 se aplicaron con una condición que excluye las rutas en español. En <code>/ES/</code> siguen cargando: <code>revslider</code>, <code>woocommerce</code>, <code>booked</code>, <code>case-theme-core</code>, <code>case-theme-user</code>, <code>instagram-feed</code>, <code>massive-cryptocurrency-widgets</code>, <code>meks-simple-flickr-widget</code>, <code>newsletter</code>, <code>yith-woocommerce-quick-view</code>, <code>yith-woocommerce-wishlist</code>, <code>elementor-pro</code>, <code>emage-hover-effects</code>, <code>google-analytics-for-wordpress</code>.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-high" id="d-nitro">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">NitroPack: Combine JS, Delay JS y Critical CSS siguen sin configurar</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-config">Config</span><span class="t t-cliente">Cliente</span></div>
+      </div>
+      <span class="f-time">15 min + QA</span>
+    </div>
+    <div class="f-body"><p>Pendiente desde junio, sigue igual. Se suma que la home devolvió <code>X-Nitro-Cache: MISS</code> en la medición, y que <code>/ES/</code> ni siquiera entra al caché.</p></div>
+  </div>
+
+  <div class="finding sev-high" id="d-schemadata">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Faltan los 11 datos del cliente para completar el schema</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-cliente">Cliente</span></div>
+      </div>
+      <span class="f-time">Bloqueado</span>
+    </div>
+    <div class="f-body"><p>Sin cambios desde junio. Se necesitan: ID de Regional Center USCIS, dirección completa, teléfono en formato E.164, email público, año de fundación, logo cuadrado de 200×200 o más (el actual es 674×150 y no sirve para Knowledge Panel), áreas servidas, idiomas, fundadores y handle de Twitter. Detalle en <code>reports/B5-schema-datos.md §2</code>.</p></div>
+  </div>
+
+  <div class="finding sev-med" id="d-headers">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Cabeceras de seguridad sin desplegar</div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-config">Config</span></div>
+      </div>
+      <span class="f-time">1 h</span>
+    </div>
+    <div class="f-body"><p>HSTS preload, CSP, X-Frame-Options y COOP siguen pendientes. En un sitio YMYL de inversión son señal de confianza, no solo higiene técnica.</p></div>
+  </div>
+</div>
+</section>
+
+<!-- ============ HALLAZGOS EN ============ -->
+<section class="panel" id="p-findings">
+<div class="wrap">
+  <h2>Hallazgos · versión en inglés</h2>
+  <p class="sub">93 URLs crawleadas en <code>openeb5.com</code>. La versión inglesa está en <b>buen estado técnico general</b>; los problemas son puntuales y de bajo esfuerzo.</p>
+  <div class="panel-progress"></div>
+
+  <h3>1 · Enlaces rotos</h3>
+
+  <div class="finding sev-crit" id="f-terms">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title"><code>/terms/</code> devuelve 404 y está enlazado desde 90 páginas</div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-dev">Técnico</span><span class="t t-nodesign">Sin diseño</span></div>
+      </div>
+      <span class="f-time">15 min</span>
+    </div>
+    <div class="f-body">
+      <p>El pie de página enlaza a <code>/terms/</code> en <b>prácticamente todo el sitio</b>. Esa URL no existe: devuelve 404. La página real es <code>/terms-of-service/</code>, que responde 200 correctamente.</p>
+      <p><b>Arreglo</b>: corregir el enlace en el footer del tema y añadir un 301 de <code>/terms/</code> a <code>/terms-of-service/</code> por si hay enlaces externos.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-high" id="f-paises404">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">4 páginas de país enlazadas desde el menú devuelven 404</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">1 h</span>
+    </div>
+    <div class="f-body">
+      <p><code>/canada/</code>, <code>/france/</code>, <code>/turkey/</code> y <code>/venezuela/</code> están enlazadas desde la home, <code>/countries/</code>, <code>/eb-5/</code> y las páginas de continente, pero <b>ninguna existe</b>.</p>
+      <p><b>Dos caminos</b>: crear las 4 páginas siguiendo la plantilla de país existente, o retirar los enlaces hasta que haya contenido. Dado que ya hay 16 países publicados, crearlas es coherente y aporta.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-med" id="f-blogpage2">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title"><code>/blog/page/2/</code> devuelve 404 desde la paginación</div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">30 min</span>
+    </div>
+    <div class="f-body"><p>La paginación de <code>/blog/</code> genera un enlace a la página 2 que no resuelve. En cambio <code>/eb-5-blog/page/2/</code> sí funciona. Hay dos archivos de blog conviviendo (ver siguiente hallazgo).</p></div>
+  </div>
+
+  <h3>2 · Duplicación y canonicals</h3>
+
+  <div class="finding sev-high" id="f-dupblog">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Tres rutas distintas sirven el mismo archivo de blog</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-seo">On-Page</span></div>
+      </div>
+      <span class="f-time">1 h</span>
+    </div>
+    <div class="f-body">
+      <p><code>/blog/</code>, <code>/category/blog/</code> y <code>/eb-5-blog/</code> conviven. <code>/blog/</code> y <code>/category/blog/</code> comparten el título "Blog Archives - openeb5" y <code>/blog/</code> canonicaliza a <code>/category/blog/</code>.</p>
+      <p><b>Recomendación</b>: dejar <code>/eb-5-blog/</code> como archivo canónico (tiene el mejor título: "EB5 Blog: Expert Insights for Foreign Investors") y redirigir las otras dos.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-med" id="f-dupproj">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Páginas de proyecto accesibles por dos rutas con el mismo título</div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-seo">On-Page</span></div>
+      </div>
+      <span class="f-time">30 min</span>
+    </div>
+    <div class="f-body">
+      <p>"Midtown Pharr EB5 Project | Texas Real Estate" aparece en <code>/midtown-pharr/</code> y en <code>/current-projects/midtown-pharr/</code>. Lo mismo con Brownsville Parkside. Las versiones cortas ya redirigen con 301, pero <b>siguen declaradas en el sitemap</b>, lo que envía señales cruzadas.</p>
+      <p>Mismo patrón en <code>/contact-us/</code> y <code>/lp-contact-us/</code>, que comparten título y contenido.</p>
+    </div>
+  </div>
+
+  <h3>3 · Metadatos</h3>
+
+  <div class="finding sev-med" id="f-metaen">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">12 páginas en inglés sin meta description</div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-content">Contenido</span></div>
+      </div>
+      <span class="f-time">2 h</span>
+    </div>
+    <div class="f-body">
+      <p>Sin descripción: <code>/blog/</code>, <code>/category/blog/</code>, <code>/terms-of-service/</code>, <code>/brownsville-parkside/</code>, <code>/current-projects/brownsville-parkside/</code> y las 6 páginas de <code>/tag/</code>.</p>
+      <p>Además <code>/blog/strategic-investment-with-open-eb5/</code> tiene una descripción de 166 caracteres, que se corta en resultados.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-low" id="f-titleen">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">3 títulos en inglés fuera del rango recomendado</div>
+        <div class="tags"><span class="t t-low">Bajo</span><span class="t t-content">Contenido</span></div>
+      </div>
+      <span class="f-time">30 min</span>
+    </div>
+    <div class="f-body">
+      <p><code>/blog/</code> con 23 caracteres ("Blog Archives - openeb5", genérico y sin keyword) y dos posts a 69-71 caracteres que se truncan en el SERP.</p>
+      <p>El resto de los títulos en inglés están bien construidos y con keyword al inicio.</p>
+    </div>
+  </div>
+
+  <h3>4 · Contenido corto</h3>
+
+  <div class="finding sev-med" id="f-thinen">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">8 páginas en inglés por debajo de 300 palabras</div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-content">Contenido</span></div>
+      </div>
+      <span class="f-time">6 h</span>
+    </div>
+    <div class="f-body">
+      <p><code>/brownsville-parkside/</code> con 73 palabras, <code>/collaborative-projects/</code> con 163, <code>/oceania/</code> con 175, <code>/europe/</code> con 179, <code>/america/</code> con 202, <code>/asia/</code> con 202, <code>/countries/</code> con 274 y <code>/current-projects/</code> con 286.</p>
+      <p>En un sector YMYL como inmigración e inversión, las páginas de menos de 300 palabras difícilmente compiten. Las de continente son las de mayor potencial porque capturan búsquedas regionales.</p>
+    </div>
+  </div>
+
+  <h3>5 · Autoridad y visibilidad</h3>
+
+  <div class="finding sev-crit" id="f-authority">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">4 keywords orgánicas en total y 1 visita orgánica estimada al mes</div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-seo">Estrategia</span></div>
+      </div>
+      <span class="f-time">Continuo</span>
+    </div>
+    <div class="f-body">
+      <p>Datos de Ahrefs al 7 de agosto de 2026. El sitio es técnicamente correcto pero <b>no tiene autoridad</b>. Las posiciones que existen son casi todas de la home en español para la keyword de marca corta "eb5".</p>
+      <p>Ninguna cantidad de trabajo on-page va a mover esto sin <b>enlaces entrantes y contenido con profundidad real</b>. Es el eje de la Fase 3 del SOW.</p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ============ ESPAÑOL ============ -->
+<section class="panel" id="p-es">
+<div class="wrap">
+  <h2>Auditoría del sitio en español</h2>
+  <p class="sub">122 URLs crawleadas bajo <code>openeb5.com/ES/</code>, con el mismo método aplicado a la versión inglesa. <b>Es la primera auditoría formal de esta parte del sitio</b> y concentra los problemas más graves de toda la propiedad.</p>
+  <div class="panel-progress"></div>
+
+  <div class="alarm">
+    <b>Contexto que hay que tener presente.</b> El sitio en español no es una traducción secundaria: es <b>lo único que genera posiciones orgánicas</b>. La home en español rankea #6 en Argentina, #7 en España, #8 en Chile y #9 en México para "eb5". Cada problema de esta pestaña afecta directamente al activo con mejor rendimiento del proyecto.
+  </div>
+
+  <h3>1 · Indexación</h3>
+
+  <div class="finding sev-crit" id="e-sitemap">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Cero URLs en español en el sitemap</div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">2 h</span>
+    </div>
+    <div class="f-body">
+      <p>El <code>sitemap_index.xml</code> declara 4 sub-sitemaps (page, post, category, tag) con 67 URLs. <b>Ninguna es <code>/ES/</code></b>. Tampoco existe un <code>/ES/sitemap.xml</code> ni nada equivalente: <code>/es-sitemap.xml</code> devuelve 404.</p>
+      <p>Google está descubriendo el sitio en español solo por enlaces internos. Para ~40 páginas que sí rankean, es una pérdida evitable.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-high" id="e-case">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title"><code>/es/</code> en minúsculas devuelve 404</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">30 min</span>
+    </div>
+    <div class="f-body">
+      <p>Solo funciona con mayúsculas: <code>/ES/</code> responde 200 y <code>/ES</code> redirige bien. Pero <code>/es/</code> devuelve <b>404</b>.</p>
+      <p>Es la convención que cualquiera escribiría a mano o pondría en un enlace externo. Un 301 de <code>/es/*</code> a <code>/ES/*</code> lo resuelve y protege enlaces entrantes futuros.</p>
+    </div>
+  </div>
+
+  <h3>2 · Señales de idioma</h3>
+
+  <div class="finding sev-crit" id="e-lang">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Las 122 páginas declaran <code>&lt;html lang="en-US"&gt;</code></div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">1 h</span>
+    </div>
+    <div class="f-body">
+      <p>Sin una sola excepción en todo el crawl. Páginas escritas íntegramente en español, dirigidas a México, Colombia, Chile y España, se presentan al navegador y al buscador como inglés de Estados Unidos.</p>
+      <p>Afecta a la selección de resultados por idioma, al traductor del navegador y a los lectores de pantalla.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-crit" id="e-hreflang">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">hreflang invertido: apunta al idioma equivocado</div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
       <span class="f-time">3 h</span>
     </div>
-  </article>
+    <div class="f-body">
+      <p>En la home en inglés el hreflang es correcto:</p>
+      <p><code>en-US → /</code> · <code>es → /ES/</code> · <code>x-default → /</code></p>
+      <p>Pero dentro del sitio en español se rompe. En <code>/ES/</code>:</p>
+      <p><code>en-US → /ES/</code> · <code>es → /ES/ES/</code> · <code>x-default → /ES/</code></p>
+      <p>El generador está <b>añadiendo el prefijo <code>/ES/</code> a una URL que ya lo tiene</b>, en lugar de calcular la pareja de idioma real. Resultado: la versión española se declara a sí misma como inglesa, y apunta a una URL inventada como su versión española.</p>
+    </div>
+  </div>
 
-  <article class="finding sev-med done" id="f-broken-links">
+  <div class="finding sev-high" id="e-shadow">
     <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">2 links internos rotos: /collaborative-investments/ + /home-onepage (404)</div>
-        <div class="tags"><span class="t t-med">Medium</span><span class="t t-claude">Claude (§8.3)</span></div></div>
-      <span class="f-time">15 min</span>
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Espacio fantasma <code>/ES/ES/</code> con 38 URLs duplicadas</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">1 h</span>
     </div>
     <div class="f-body">
-      <p><b>Resuelto.</b> <code>functions.php §8.3</code> emite 301 server-side para ambas URLs: <code>/collaborative-investments/ → /collaborative-projects/</code> + <code>/home-onepage* → /</code>. Hook <code>template_redirect</code> priority 1. No requiere plugin Redirection adicional. Detalle <code>reports/B3-links-rotos-final.md</code>.</p>
+      <p>Consecuencia directa del hreflang roto: existe un árbol completo de URLs duplicadas bajo <code>/ES/ES/</code>. La mayoría redirige con 301 a su versión correcta, pero <code>/ES/ES/</code> a secas <b>devuelve 404 y está enlazada desde la home en español</b>.</p>
+      <p>Cada una de esas 38 URLs consume presupuesto de rastreo y aparece como versión alternativa declarada en el hreflang.</p>
     </div>
-  </article>
+  </div>
 
-  <h3>4 · Schema / Structured Data</h3>
+  <h3>3 · Enlaces rotos en español</h3>
 
-  <article class="finding sev-high done" id="f-financial">
+  <div class="finding sev-crit" id="e-404s">
     <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Sin FinancialService / LocalBusiness schema (solo Organization shell minúscula)</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-claude">Claude (Fase 4 §14)</span></div></div>
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">21 enlaces internos rotos apuntando a slugs en inglés</div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">3 h</span>
+    </div>
+    <div class="f-body">
+      <p>El patrón es sistemático: páginas en español enlazan a la ruta <code>/ES/</code> + <b>el slug en inglés</b>, que no existe porque el slug español es distinto. Todas devuelven 404:</p>
+    </div>
+    <div class="tw scroll" style="margin-top:14px">
+      <table>
+        <thead><tr><th>URL rota (404)</th><th>Debería apuntar a</th><th class="r">Páginas que enlazan</th></tr></thead>
+        <tbody>
+          <tr><td><code>/ES/contact-us/</code></td><td><code>/ES/contactanos/</code></td><td class="r vc">22</td></tr>
+          <tr><td><code>/ES/spain/</code></td><td><code>/ES/espana/</code></td><td class="r">6</td></tr>
+          <tr><td><code>/ES/brazil/</code></td><td><code>/ES/brasil/</code></td><td class="r">6</td></tr>
+          <tr><td><code>/ES/south-korea/</code></td><td><code>/ES/corea-del-sur/</code></td><td class="r">6</td></tr>
+          <tr><td><code>/ES/united-kingdom/</code></td><td><code>/ES/reino-unido/</code></td><td class="r">6</td></tr>
+          <tr><td><code>/ES/eb-5-blog/</code></td><td><code>/ES/eb5-blog/</code></td><td class="r">4</td></tr>
+          <tr><td><code>/ES/canada/</code></td><td>no existe en ES ni EN</td><td class="r">4</td></tr>
+          <tr><td><code>/ES/france/</code></td><td>no existe en ES ni EN</td><td class="r">4</td></tr>
+          <tr><td><code>/ES/turkey/</code></td><td>no existe en ES ni EN</td><td class="r">4</td></tr>
+          <tr><td><code>/ES/venezuela/</code></td><td>no existe en ES ni EN</td><td class="r">4</td></tr>
+          <tr><td><code>/ES/about-us/</code></td><td><code>/ES/nosotros/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/the-team/</code></td><td><code>/ES/el-equipo/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/countries/</code></td><td><code>/ES/paises/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/current-projects/</code></td><td><code>/ES/proyectos-actuales/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/collaborative-projects/</code></td><td><code>/ES/proyectos-colaborativos/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/news/</code></td><td><code>/ES/noticias/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/europe/</code></td><td><code>/ES/europa/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/investors/</code></td><td><code>/ES/cuestionario-para-inversionistas/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/the-complete-guide-to-eb-5-investment/</code></td><td><code>/ES/guia-integral-para-inversiones-eb5/</code></td><td class="r">2</td></tr>
+          <tr><td><code>/ES/programa-eb-5/</code></td><td><code>/ES/eb-5/</code></td><td class="r">1</td></tr>
+          <tr><td><code>/ES/ES/</code></td><td><code>/ES/</code></td><td class="r">1</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="f-body">
+      <p><b>El más caro es <code>/ES/contact-us/</code></b>: enlazado desde 22 páginas, casi todas entradas de blog. Es el enlace de conversión del sitio en español y está roto en toda la sección editorial.</p>
+      <p>Cuatro de ellos (<code>canada</code>, <code>france</code>, <code>turkey</code>, <code>venezuela</code>) son los mismos países que faltan en inglés: son huecos de contenido, no errores de traducción de slug.</p>
+    </div>
+  </div>
+
+  <h3>4 · Metadatos en español</h3>
+
+  <div class="finding sev-high" id="e-meta">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">33 páginas en español sin meta description</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+      </div>
+      <span class="f-time">5 h</span>
+    </div>
+    <div class="f-body">
+      <p>Sin descripción: <b>las 13 entradas del blog en español</b>, <b>16 páginas de país</b> (argentina, australia, brasil, chile, china, colombia, corea-del-sur, espana, india, israel, mexico, pakistan, peru, reino-unido, taiwan, vietnam), más <code>/ES/noticias/</code>, <code>/ES/lp-guia/</code>, <code>/ES/privacy-policy/</code> y <code>/ES/terms-of-service/</code>.</p>
+      <p>En el otro extremo, <code>/ES/midtown-brownsville-ii/</code> tiene una descripción de <b>341 caracteres</b> (más del doble de lo que Google muestra) y <code>/ES/advisory-board/</code> tiene 178.</p>
+    </div>
+  </div>
+
+  <div class="finding sev-high" id="e-titles">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">Plantilla de título del blog en español demasiado larga</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+      </div>
       <span class="f-time">2 h</span>
     </div>
     <div class="f-body">
-      <p><b>Resuelto Fase 4.</b> <code>functions.php §14</code> añade al grafo de Yoast vía filter <code>wpseo_schema_graph</code>: <code>FinancialService</code> con <code>areaServed</code> 9 países (US + 8 emisores LatAm/Asia), <code>priceRange $800K+</code>, <code>telephone</code>, <code>email</code>, <code>address McAllen TX 78501</code>. <code>LocalBusiness</code> con <code>GeoCoordinates</code> 26.2034,-98.2300, <code>OpeningHoursSpecification</code> L-V 9-18, <code>sameAs</code> LinkedIn/FB/IG. <code>Person</code> con <code>worksFor</code> Org en single posts. Verificado 14 Jun: <code>curl /?nocache=N | grep -c FinancialService</code> = 1, 16 <code>@type</code> distintos (vs 11 antes), 9× Country, 2× PostalAddress.</p>
-      <p><b>Pendiente cliente:</b> USCIS Regional Center ID exacto + logo cuadrado 200×200+ para Knowledge Panel.</p>
+      <p>Las entradas del blog en español usan el sufijo <code> - Open EB5 | Green Card</code>, que gasta 24 caracteres. Con eso, <b>12 de 13 posts superan los 60 caracteres</b> y se truncan:</p>
+      <ul>
+        <li>113 caracteres — "Guía de la Visa de Inversionista EB-5: Requisitos, Costos y el Camino hacia la Green Card - Open EB5 | Green Card"</li>
+        <li>111 caracteres — "¿Qué pasa después de navegar el programa de visa EB-5 por EB-5? Etapas y próximos pasos…" (además el título tiene una redacción rota: "navegar el programa de visa EB-5 por EB-5")</li>
+        <li>108 caracteres — "Inversión Estratégica con Open EB5: Obtén la Residencia Permanente en Estados Unidos…"</li>
+        <li>107 caracteres — "Texas, el Lugar Ideal para Invertir y Obtener tu residencia permanente con Open EB5…"</li>
+      </ul>
+      <p><b>Arreglo</b>: cambiar el sufijo a <code> | Open EB5</code> y recortar los 4 títulos más largos a menos de 60 caracteres con la keyword al inicio.</p>
     </div>
-  </article>
+  </div>
 
-  <article class="finding sev-high plan" id="f-breadcrumb">
+  <div class="finding sev-med" id="e-titlecorto">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">BreadcrumbList rota: 1 item (inválida según Schema.org)</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-cliente">Yoast cliente</span></div></div>
+      <div class="f-main">
+        <div class="f-title">4 páginas de país con títulos de una sola palabra</div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+      </div>
       <span class="f-time">1 h</span>
     </div>
-  </article>
+    <div class="f-body">
+      <p><code>/ES/chile/</code>, <code>/ES/china/</code>, <code>/ES/india/</code> y <code>/ES/peru/</code> tienen títulos del tipo "Chile - Open EB5 | Green Card": 28-29 caracteres y <b>sin ninguna keyword del programa</b>.</p>
+      <p>Contrasta con las otras páginas de país en español, que sí usan un patrón trabajado ("Programa EB5 América: Evalúe sus Opciones en EE. UU."). Son 4 páginas que quedaron fuera del pase de optimización.</p>
+    </div>
+  </div>
 
-  <article class="finding sev-med plan" id="f-article">
+  <h3>5 · Contenido en español</h3>
+
+  <div class="finding sev-high" id="e-h1">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Sin Article schema en 19 blog posts (Yoast emite WebPage genérico)</div>
-        <div class="tags"><span class="t t-med">Medium</span><span class="t t-cliente">Yoast cliente</span></div></div>
-      <span class="f-time">2 h</span>
-    </div>
-  </article>
-
-  <h3>5 · Performance / CWV</h3>
-
-  <article class="finding sev-crit done" id="f-cls">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">CLS mobile rojo + LCP 14.9s</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-claude">Claude (Fase 1)</span></div></div>
-      <span class="f-time">30 min</span>
-    </div>
-    <div class="f-body">
-      <p><b>Solución.</b> child theme <code>style.css</code>: <code>@font-face { font-display: swap }</code> + <code>functions.php §3</code> filter <code>wp_get_attachment_image_attributes</code>.</p>
-      <p><b>Verificado.</b> CLS mobile <b>0.039</b> · CLS desktop <b>0.13</b>. Ambos en verde.</p>
-    </div>
-  </article>
-
-  <article class="finding sev-crit done" id="f-payload">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">76 scripts + 12 MB payload (regresión vs 5.9 MB anterior)</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-claude">Claude (Fase 3+4)</span></div></div>
-      <span class="f-time">resuelto</span>
-    </div>
-    <div class="f-body">
-      <p><b>Resuelto.</b> Camino B sustituyó Slider Revolution por hero estático WebP (ahorro 516 KB JS), NitroPack pasó a HIT con Combine CSS activo (styles 72 → 12, -83%), 6 plugins zombies eliminados (Crypto + Meks + Smart Slider + MonsterInsights + Booked + weimg).</p>
-      <p><b>Hoy 14 Jun.</b> Scripts <b>76 → 59</b> · Styles <b>72 → 12</b> · Payload <b>12 MB → 3.5 MB</b> · NitroPack <code>HIT</code> · PHPSESSID eliminado · CLS <b>0.039</b>.</p>
-      <p><b>Pendiente cliente:</b> NitroPack Delay JS + Critical CSS (último empujón a Lighthouse 80+).</p>
-    </div>
-  </article>
-
-  <article class="finding sev-high partial" id="f-dequeues">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">9 bloques dequeue: #1-#3 + #5 + #6 + #8 + #9 activos (7/9)</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-claude">Claude (7 blocks)</span><span class="t t-cliente">#4 + #7 QA</span></div></div>
-      <span class="f-time">7/9 activos</span>
-    </div>
-    <div class="f-body">
-      <p><b>Activos.</b> §7.4 BLOCK #8 (CF7 conditional). §2 BLOCK #1 (Flaticon v2-v5 legacy), #2 (animate.css demo), #3 (Font Awesome v4 dupe). §2 BLOCK #5 (Booked belt-and-suspenders), #6 (Case Theme User), #9 (Smart Slider belt-and-suspenders).</p>
-      <p><b>Pendiente.</b> #4 magnific-popup (verificar uso lightbox en galerías), #7 ElementsKit demo modules (verificar widgets Pro vs Lite). Riesgo medio — requieren QA visual antes.</p>
-    </div>
-  </article>
-
-  <h3>6 · AI Search Readiness (GEO)</h3>
-
-  <article class="finding sev-med done" id="f-llms">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">/llms.txt ausente (template entregado en reports/geo-ai-readiness.md)</div>
-        <div class="tags"><span class="t t-med">Medium</span><span class="t t-claude">Claude (Fase 4)</span></div></div>
-      <span class="f-time">30 min</span>
-    </div>
-    <div class="f-body">
-      <p><b>Publicado 14 Jun.</b> <code>curl -sI https://openeb5.com/llms.txt</code> → 200 OK. Contenido: descripción Open EB5, canonical content URLs, key facts AI-extractable (mín $800K TEA, 10 jobs, Reform Act 2022), 8 países servidos, contacto, content licensing. Junto con <code>robots.txt</code> ampliado §12: 8 AI crawlers named (GPTBot, OAI-SearchBot, ChatGPT-User, ClaudeBot, anthropic-ai, PerplexityBot, Google-Extended, Bingbot).</p>
-    </div>
-  </article>
-
-  <article class="finding sev-low done" id="f-securitytxt">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">/.well-known/security.txt no publicado</div>
-        <div class="tags"><span class="t t-low">Low</span><span class="t t-claude">Claude (Fase 4)</span></div></div>
-      <span class="f-time">5 min</span>
-    </div>
-    <div class="f-body">
-      <p><b>Publicado 14 Jun.</b> <code>curl -sI https://openeb5.com/.well-known/security.txt</code> → 200 OK. Contact, Expires 2027-06-14, Preferred-Languages en/es, Canonical URL.</p>
-    </div>
-  </article>
-
-  <h3>7 · Images</h3>
-
-  <article class="finding sev-high partial" id="f-webp">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">155 imágenes WebP generadas localmente (-76% peso) — activar serving via NitroPack</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-claude">Claude (gen)</span><span class="t t-cliente">Toggle NitroPack</span></div></div>
-      <span class="f-time">5 min</span>
-    </div>
-    <div class="f-body">
-      <p>134 MB → 31.7 MB con script Python+Pillow. NitroPack hace WebP on-the-fly al activar el toggle (no subir <code>optimized/</code>).</p>
-    </div>
-  </article>
-
-  <article class="finding sev-low plan" id="f-alts">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">11 imágenes home sin <code>alt=""</code> y sitewide</div>
-        <div class="tags"><span class="t t-low">Low</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">4 h</span>
-    </div>
-  </article>
-
-  <article class="finding sev-low plan" id="f-og">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">OG image es logo 308×45 (debe ser 1200×630)</div>
-        <div class="tags"><span class="t t-low">Low</span><span class="t t-cliente">Cliente</span></div></div>
+      <div class="f-main">
+        <div class="f-title">4 páginas con dos H1, y el segundo sin traducir</div>
+        <div class="tags"><span class="t t-high">Alto</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+      </div>
       <span class="f-time">1 h</span>
     </div>
-  </article>
-
-  <h3>Compliance / PII (detectado Fase 2)</h3>
-
-  <article class="finding sev-crit done" id="f-pii">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">30+ PDFs *questionnaire* de investors públicos (HTTP 200)</div>
-        <div class="tags"><span class="t t-crit">Critical · Compliance</span><span class="t t-claude">Claude (Fase 1)</span></div></div>
-      <span class="f-time">5 min</span>
-    </div>
     <div class="f-body">
-      <p><b>Riesgo.</b> SEC / FINRA. Financial PII $800K+, passport, dirección.</p>
-      <p><b>Solución.</b> <code>uploads/.htaccess</code> bloquea <code>*questionnaire*.pdf</code> + <code>X-Robots-Tag: noindex</code>. Verificado 404.</p>
+      <p>Además de tener dos H1 (debería haber uno), el segundo está en inglés o en portugués en páginas dirigidas a hispanohablantes:</p>
+      <ul>
+        <li><code>/ES/corea-del-sur/</code> — H1 #2: "Expand Your Horizons with EB5 Investment"</li>
+        <li><code>/ES/reino-unido/</code> — H1 #2: "Build Your American Legacy &amp; Expand…"</li>
+        <li><code>/ES/brasil/</code> — H1 #2: "Investimento Estratégico nos EUA" (portugués)</li>
+        <li><code>/ES/espana/</code> — H1 #2: "Construye tu legado en los Estados Unido" (truncado, falta la "s")</li>
+      </ul>
     </div>
-  </article>
+  </div>
 
-  <article class="finding sev-crit done" id="f-zips">
-    <div class="f-head">
-      <label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">wordpress-seo-premium.zip público (violación licencia Yoast Premium) + logs CSV</div>
-        <div class="tags"><span class="t t-crit">Critical · Compliance</span><span class="t t-claude">Claude (Fase 2)</span></div></div>
-      <span class="f-time">10 min</span>
-    </div>
-    <div class="f-body">
-      <p><b>Solución.</b> <code>.htaccess</code> ampliado: bloqueo <code>.zip .tar .7z .rar</code> · <code>.log .csv .tmp</code>. Cliente debe además borrar los ZIPs físicamente del servidor.</p>
-    </div>
-  </article>
-
-  <article class="finding sev-high plan" id="f-refactor">
+  <div class="finding sev-med" id="e-thin">
     <div class="f-head">
       <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">Sprint 2: refactor plugin form-to-pdf → carpeta protegida + endpoint authenticated</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-dev">Dev ~16h</span></div></div>
-      <span class="f-time">~16 h dev</span>
+      <div class="f-main">
+        <div class="f-title">10 páginas en español por debajo de 300 palabras</div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+      </div>
+      <span class="f-time">8 h</span>
     </div>
     <div class="f-body">
-      <p><b>Plan 5 fases.</b> Detalle <code>reports/C2-refactor-form-to-pdf.md</code>. Carpeta privada + nonce + capability check + audit log + cleanup cron. NO ejecutar sin aprobación cliente.</p>
+      <p><code>/ES/noticias/</code> con 69 palabras, <code>/ES/corea-del-sur/</code> con 93, <code>/ES/reino-unido/</code> con 122, <code>/ES/lp-guia/</code> con 125, <code>/ES/espana/</code> con 133, <code>/ES/brasil/</code> con 135, <code>/ES/oceania/</code> con 166, <code>/ES/europa/</code> con 177, <code>/ES/proyectos-colaborativos/</code> con 191 y <code>/ES/america/</code> con 199.</p>
+      <p><code>/ES/espana/</code> merece prioridad: España es uno de los mercados donde el sitio ya rankea (#7 para "eb5") y la página tiene 133 palabras.</p>
     </div>
-  </article>
+  </div>
+
+  <h3>6 · Rendimiento en español</h3>
+
+  <div class="finding sev-crit" id="e-perf">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title"><code>/ES/</code> se sirve sin caché y con el stack de plugins antiguo completo</div>
+        <div class="tags"><span class="t t-crit">Crítico</span><span class="t t-es">Español</span><span class="t t-dev">Técnico</span></div>
+      </div>
+      <span class="f-time">4-6 h</span>
+    </div>
+    <div class="f-body">
+      <p><b>Caché.</b> Las páginas en inglés devuelven <code>Cache-Control: no-cache</code> con NitroPack por delante. Las españolas devuelven <code>Cache-Control: no-store, no-cache, must-revalidate</code> y <code>Pragma: no-cache</code>: nunca entran al caché, ni de NitroPack ni del navegador. Cada visita regenera la página completa desde PHP.</p>
+      <p><b>Assets.</b> Comparación medida en vivo:</p>
+      <ul>
+        <li>Home inglés: 18 scripts, 28 hojas de estilo, 10 bundles de plugins</li>
+        <li>Home español: 29 scripts, 64 hojas de estilo, <b>24 bundles de plugins</b></li>
+      </ul>
+      <p>Los dequeues de las Fases 1-4 nunca se aplicaron a estas rutas. En español siguen cargando <code>revslider</code>, <code>woocommerce</code>, <code>yith-woocommerce-wishlist</code>, <code>yith-woocommerce-quick-view</code>, <code>booked</code>, <code>case-theme-core</code>, <code>case-theme-user</code>, <code>instagram-feed</code>, <code>massive-cryptocurrency-widgets</code>, <code>meks-simple-flickr-widget</code> y <code>newsletter</code>.</p>
+      <p><b>Es el sitio que rankea, servido en la peor configuración de la propiedad.</b></p>
+    </div>
+  </div>
+
+  <div class="finding sev-med" id="e-schemaorg">
+    <div class="f-head">
+      <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+      <div class="f-main">
+        <div class="f-title">La home en español no incluye el nodo <code>Organization</code></div>
+        <div class="tags"><span class="t t-med">Medio</span><span class="t t-es">Español</span><span class="t t-seo">Schema</span></div>
+      </div>
+      <span class="f-time">30 min</span>
+    </div>
+    <div class="f-body"><p>El grafo JSON-LD en español replica el inglés salvo por <code>Organization</code>, que falta. También conviene traducir los campos textuales del schema (<code>description</code>, <code>areaServed</code>) en lugar de servirlos en inglés.</p></div>
+  </div>
+</div>
 </section>
 
-<!-- ============ PLAN ============ -->
+<!-- ============ PLAN 30 DÍAS ============ -->
 <section class="panel" id="p-plan">
-  <h2>Plan de acción · 47 acciones priorizadas</h2>
-  <p class="sub">Lista completa <code>ACTION-PLAN.md</code>. P0 = esta semana · P1 = este mes · P2 = próximo trimestre · P3 = backlog.</p>
+<div class="wrap">
+  <h2>Plan de 30 días · 4 semanas</h2>
+  <p class="sub">Doce tareas repartidas en cuatro semanas. Cada semana tiene <b>una tarea técnica y dos de on-page</b>, tal como se acordó. El orden no es arbitrario: primero se hace que Google pueda ver el sitio en español, después se arregla lo que está roto, luego se limpian las señales duplicadas, y al final se acelera.</p>
   <div class="panel-progress"></div>
 
-  <h3>P0 — Crítico (semana 1)</h3>
-
-  <article class="finding sev-crit plan" id="p0-1">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">1 · Yoast Organization name = "Open EB5" + phone +1-855-OPENEB5 + address McAllen</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-cliente">Cliente Yoast</span></div></div>
-      <span class="f-time">30 min</span></div>
-  </article>
-
-  <article class="finding sev-crit plan" id="p0-2">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">2 · Rewrite homepage title + meta description</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-cliente">Cliente Marketing</span></div></div>
-      <span class="f-time">30 min</span></div>
-  </article>
-
-  <article class="finding sev-crit done" id="p0-3">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">3 · Strip Cache-Control: no-store (NitroPack drop-in sirve antes de PHP)</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-claude">Claude</span></div></div>
-      <span class="f-time">15 min</span></div>
-  </article>
-
-  <article class="finding sev-crit done" id="p0-4">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">4 · PHPSESSID identificado (Booked) + filter en child theme</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-claude">Claude</span></div></div>
-      <span class="f-time">15 min</span></div>
-  </article>
-
-  <article class="finding sev-crit plan" id="p0-5">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">5 · Security headers en Cloudflare (HSTS + 5 más)</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-cliente">Cloudflare</span></div></div>
-      <span class="f-time">1 h</span></div>
-  </article>
-
-  <article class="finding sev-crit done" id="p0-6">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">6 · Strip meta generator tags (wp_generator + ?ver= en assets)</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-claude">Claude (§4+§7.3)</span></div></div>
-      <span class="f-time">15 min</span></div>
-  </article>
-
-  <article class="finding sev-crit plan" id="p0-7">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">7 · Reparar BreadcrumbList schema (1 item inválido)</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-cliente">Yoast cliente</span></div></div>
-      <span class="f-time">1 h</span></div>
-  </article>
-
-  <article class="finding sev-crit done" id="p0-8">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">8 · Delete plugins: 6 de 7 eliminados (Crypto, Meks, Smart Slider, MonsterInsights, Booked, weimg)</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-cliente">Cliente WP Admin (hecho 14 Jun)</span></div></div>
-      <span class="f-time">5 min</span></div>
-    <div class="f-body"><p><b>Eliminados 14 Jun:</b> Massive Crypto, Meks Flickr, Smart Slider 3, MonsterInsights, Booked, weimgoptimizer. Pendiente: <b>ElementsKit Lite</b> (rompía cards de Countries al desactivar — mantener activo hasta migrar widget).</p></div>
-  </article>
-
-  <article class="finding sev-crit done" id="p0-9">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">9 · FinancialService + LocalBusiness JSON-LD (vivo en producción)</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-claude">Claude (Fase 4 §14)</span></div></div>
-      <span class="f-time">resuelto 14 Jun</span></div>
-  </article>
-
-  <article class="finding sev-crit done" id="p0-10">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">10 · Publicar /llms.txt</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-claude">Claude (Fase 4)</span></div></div>
-      <span class="f-time">resuelto 14 Jun</span></div>
-  </article>
-
-  <article class="finding sev-crit plan" id="p0-11">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">11 · Audit /about-us/ y remover "Dunkin Donuts Harlingen TX" off-topic</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-cliente">Cliente</span></div></div>
-      <span class="f-time">30 min</span></div>
-  </article>
-
-  <article class="finding sev-crit plan" id="p0-12">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">12 · noindex en /confirmation/, /success/, /lp-contact-us/, /elementor-7790/</div>
-        <div class="tags"><span class="t t-crit">P0</span><span class="t t-cliente">Yoast cliente</span></div></div>
-      <span class="f-time">30 min</span></div>
-  </article>
-
-  <h3>P1 — High (semanas 2-4)</h3>
-  <div class="tw">
-    <table>
-      <thead><tr><th>#</th><th>Acción</th><th class="r">Esfuerzo</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr><td>13</td><td>Hreflang EN/ES + country pages</td><td class="r">4 h</td><td><span class="t t-claude">Ruta 2 home</span></td></tr>
-        <tr><td>14</td><td>ES blog posts en sitemap</td><td class="r">2 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>15</td><td>RevSlider hero → imagen estática + LCP preload</td><td class="r">3 h</td><td><span class="t t-crit">Bloqueado (regla #7)</span></td></tr>
-        <tr><td>16</td><td>Rewrite homepage hero copy + value prop + trust metrics</td><td class="r">4 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>17</td><td>Meta descriptions 15 pages clave</td><td class="r">3 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>18</td><td>Rewrite pillar guide (3× word count, TEA, Reform Act, USCIS cites)</td><td class="r">16 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>19-22</td><td>FAQ/HowTo/Article/Person schemas</td><td class="r">7 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>23</td><td>Bios 8 staff + named immigration attorney + securities counsel</td><td class="r">8 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>24</td><td>"Last updated" + author byline en blog posts</td><td class="r">2 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>25</td><td>WebP conversion sitewide</td><td class="r">4 h</td><td><span class="t t-claude">155 listos · NitroPack toggle</span></td></tr>
-        <tr><td>26</td><td>Audit alt="" en 11 imágenes home + sitewide</td><td class="r">4 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>27</td><td>OG image 1200×630 (logo actual no sirve)</td><td class="r">1 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>28</td><td>Service + InvestmentOrDeposit schema en projects</td><td class="r">2 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>29</td><td>Migrar blog permalink /YYYY/MM/DD/ → /blog/</td><td class="r">4 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>30-33</td><td>GBP McAllen · Crunchbase · USCIS directory · IIUSA member</td><td class="r">5 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>34</td><td>IndexNow ON en Yoast</td><td class="r">5 min</td><td><span class="t t-cliente">Cliente</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h3>P2 — Medium (semanas 5-12)</h3>
-  <div class="tw">
-    <table>
-      <thead><tr><th>#</th><th>Acción</th><th class="r">Esfuerzo</th><th>Status</th></tr></thead>
-      <tbody>
-        <tr><td>35-36</td><td>Rewrite top 5 country pages + noindex 13 restantes</td><td class="r">32 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>37</td><td>12 nuevos blog posts keyword-gap (EB-5 vs E-2, Reform Act, etc.)</td><td class="r">48 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>38-40</td><td>PR I-956F · 4 guest articles · LatAm research piece</td><td class="r">62 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>41</td><td>Consolidar analytics: GTM only (remove duplicado gtag/MI)</td><td class="r">2 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>42</td><td>Redis object cache</td><td class="r">2 h</td><td><span class="t t-cliente">DevOps</span></td></tr>
-        <tr><td>43</td><td>Disable /wp-json/wp/v2/users (user enumeration)</td><td class="r">30 min</td><td><span class="t t-claude">✅ §5 child theme</span></td></tr>
-        <tr><td>44</td><td>Disable XML-RPC</td><td class="r">15 min</td><td><span class="t t-claude">✅ §7.3 child theme</span></td></tr>
-        <tr><td>45</td><td>preconnect fonts.gstatic.com + GTM</td><td class="r">30 min</td><td><span class="t t-claude">✅ §4 trim DNS prefetch</span></td></tr>
-        <tr><td>46</td><td>/.well-known/security.txt</td><td class="r">30 min</td><td><span class="t t-cliente">Cliente</span></td></tr>
-        <tr><td>47</td><td>Self-host Google Fonts</td><td class="r">2 h</td><td><span class="t t-cliente">Cliente</span></td></tr>
-      </tbody>
-    </table>
-  </div>
-
-  <h3>P3 — Backlog</h3>
   <div class="note">
-    Event schema (webinars) · VideoObject (YouTube) · breadcrumb UI visible · structured data CI validator · XML image sitemap · PWA manifest · cookie SameSite audit · refactor form-to-PDF (✅ plan en C2) · refresh /privacy-policy/ + /terms-of-service/ · ROI calculator interactivo para info-gain.
+    <b>Criterio de priorización.</b> El sitio en español es el que produce las posiciones orgánicas del proyecto y es el que peor está. Por eso las tres primeras semanas se concentran ahí. La cuarta cierra rendimiento y consolida el inglés.
   </div>
+
+  <!-- SEMANA 1 -->
+  <div class="week">
+    <div class="week-h">
+      <span class="wn">Semana 1</span>
+      <span class="wd">11 – 15 Ago · Que Google vea el español</span>
+      <span class="wg">Sin sitemap y con el idioma mal declarado, nada de lo que se haga después se aprovecha. Esta semana pone los cimientos de indexación del sitio que ya rankea.</span>
+    </div>
+    <div class="week-body">
+      <div class="finding sev-crit" id="w1t">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">T1 · Sitemap en español y atributo <code>lang</code> correcto</div>
+            <div class="tags"><span class="t t-crit">Técnica</span><span class="t t-es">Español</span><span class="t t-dev">Tema + Yoast</span></div>
+          </div>
+          <span class="f-time">4 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Qué se hace.</b> Incluir las ~40 URLs de <code>/ES/</code> en el sitemap de Yoast (o generar un <code>/ES/sitemap.xml</code> propio y referenciarlo desde el índice). En paralelo, corregir el atributo <code>lang</code> del <code>&lt;html&gt;</code> para que las rutas <code>/ES/</code> emitan <code>es</code> en lugar de <code>en-US</code>.</p>
+          <p><b>Cómo se verifica.</b> <code>sitemap_index.xml</code> lista las URLs en español, y <code>curl</code> sobre 5 páginas en español devuelve <code>lang="es"</code>. Enviar el sitemap actualizado en Search Console.</p>
+          <p><b>Por qué primero.</b> Es lo que multiplica el efecto de todo lo demás: hasta 40 páginas pasan de ser descubiertas por casualidad a estar declaradas.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-high" id="w1o1">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O1 · Meta descriptions para las 13 entradas del blog en español</div>
+            <div class="tags"><span class="t t-high">On-Page</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+          </div>
+          <span class="f-time">3 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Qué se hace.</b> Redactar una meta description de 140 a 155 caracteres para cada uno de los 13 posts en español, que hoy no tienen ninguna. Cada una con la keyword principal del post y una llamada a la acción.</p>
+          <p><b>Prioridad dentro de la tarea.</b> Empezar por <code>que-es-la-green-card-y-que-beneficios-ofrece-en-estados-unidos</code>, que ya rankea #27 en Estados Unidos para una keyword de 500 búsquedas al mes.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-high" id="w1o2">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O2 · Acortar la plantilla de títulos del blog en español</div>
+            <div class="tags"><span class="t t-high">On-Page</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+          </div>
+          <span class="f-time">2 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Qué se hace.</b> Cambiar el sufijo <code> - Open EB5 | Green Card</code> por <code> | Open EB5</code>, lo que recupera 14 caracteres en las 13 entradas. Después reescribir los 4 títulos que aun así superan los 60 caracteres, poniendo la keyword al inicio.</p>
+          <p><b>Incluye un arreglo de redacción.</b> El título "¿Qué pasa después de navegar el programa de visa EB-5 por EB-5?" está roto (parece un buscar-y-reemplazar mal aplicado). Debe decir "¿Qué pasa después de obtener la Green Card por EB-5?".</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEMANA 2 -->
+  <div class="week">
+    <div class="week-h">
+      <span class="wn">Semana 2</span>
+      <span class="wd">18 – 22 Ago · Reparar lo roto</span>
+      <span class="wg">27 enlaces internos rotos entre los dos idiomas. Uno de ellos, el de contacto en español, está roto en 22 páginas de blog: es una fuga de conversión, no solo un problema de SEO.</span>
+    </div>
+    <div class="week-body">
+      <div class="finding sev-crit" id="w2t">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">T2 · Eliminar los 27 enlaces rotos y añadir los 301 de respaldo</div>
+            <div class="tags"><span class="t t-crit">Técnica</span><span class="t t-dev">Tema + .htaccess</span></div>
+          </div>
+          <span class="f-time">5 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>En español (21).</b> Corregir en las plantillas y en el contenido los enlaces que apuntan a <code>/ES/</code> + slug inglés. Prioridad absoluta a <code>/ES/contact-us/</code>, roto en 22 páginas. Añadir 301 de cada slug inglés a su equivalente español para cubrir enlaces externos.</p>
+          <p><b>En inglés (6).</b> Corregir <code>/terms/</code> en el footer (90 páginas) y redirigir a <code>/terms-of-service/</code>. Resolver <code>/blog/page/2/</code>. Retirar o crear <code>/canada/</code>, <code>/france/</code>, <code>/turkey/</code> y <code>/venezuela/</code>.</p>
+          <p><b>Extra de bajo coste.</b> Añadir el 301 de <code>/es/*</code> en minúsculas a <code>/ES/*</code>, y sacar del sitemap las 2 URLs que redirigen.</p>
+          <p><b>Cómo se verifica.</b> Re-crawl completo: cero respuestas 404 en las 215 URLs.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-high" id="w2o1">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O3 · Reescribir los títulos de las 4 páginas de país en español que quedaron sin optimizar</div>
+            <div class="tags"><span class="t t-high">On-Page</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+          </div>
+          <span class="f-time">2 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Qué se hace.</b> <code>/ES/chile/</code>, <code>/ES/china/</code>, <code>/ES/india/</code> y <code>/ES/peru/</code> tienen títulos de 28-29 caracteres sin keyword ("Chile - Open EB5 | Green Card"). Reescribirlos siguiendo el patrón que ya funciona en las demás páginas de país: "Visa EB5 desde Chile: Requisitos y Proceso | Open EB5".</p>
+          <p>Añadir también la meta description que falta en las 16 páginas de país en español.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-high" id="w2o2">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O4 · Corregir los H1 duplicados y sin traducir</div>
+            <div class="tags"><span class="t t-high">On-Page</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+          </div>
+          <span class="f-time">2 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Qué se hace.</b> Dejar un único H1 por página en <code>/ES/brasil/</code>, <code>/ES/corea-del-sur/</code>, <code>/ES/espana/</code> y <code>/ES/reino-unido/</code>, convirtiendo el segundo en H2 y traduciéndolo al español.</p>
+          <p>Hoy hay H1 en inglés ("Expand Your Horizons with EB5 Investment"), en portugués ("Investimento Estratégico nos EUA") y uno truncado a media palabra ("Construye tu legado en los Estados Unido").</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEMANA 3 -->
+  <div class="week">
+    <div class="week-h">
+      <span class="wn">Semana 3</span>
+      <span class="wd">25 – 29 Ago · Señales limpias y contenido</span>
+      <span class="wg">Con el sitio indexable y sin enlaces rotos, toca eliminar las señales contradictorias que hacen que Google no sepa qué versión mostrar en qué país.</span>
+    </div>
+    <div class="week-body">
+      <div class="finding sev-crit" id="w3t">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">T3 · Reparar el hreflang y eliminar el espacio <code>/ES/ES/</code></div>
+            <div class="tags"><span class="t t-crit">Técnica</span><span class="t t-es">Español</span><span class="t t-dev">inc/hreflang.php</span></div>
+          </div>
+          <span class="f-time">5 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Qué se hace.</b> Reescribir el generador de hreflang para que calcule la pareja de idioma real en lugar de anteponer <code>/ES/</code> a la URL actual. El resultado esperado en <code>/ES/nosotros/</code> es: <code>en-US → /about-us/</code>, <code>es → /ES/nosotros/</code>, <code>x-default → /about-us/</code>.</p>
+          <p>Esto requiere un mapa explícito de equivalencias entre slugs, ya que los slugs españoles no son traducciones automáticas de los ingleses.</p>
+          <p><b>Después.</b> Eliminar el enlace a <code>/ES/ES/</code> de la home en español y añadir un 301 de <code>/ES/ES/*</code> a <code>/ES/*</code> para cerrar las 38 URLs fantasma.</p>
+          <p><b>Cómo se verifica.</b> Re-crawl: cero URLs bajo <code>/ES/ES/</code> y hreflang recíproco correcto en 10 pares de páginas.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-high" id="w3o1">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O5 · Ampliar las 5 páginas en español más cortas</div>
+            <div class="tags"><span class="t t-high">On-Page</span><span class="t t-es">Español</span><span class="t t-content">Contenido</span></div>
+          </div>
+          <span class="f-time">6 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Qué se hace.</b> Llevar a un mínimo de 400 palabras, con contenido específico del mercado y no relleno:</p>
+          <ul>
+            <li><code>/ES/espana/</code> — 133 palabras · <b>prioridad</b>, España ya rankea #7 para "eb5"</li>
+            <li><code>/ES/corea-del-sur/</code> — 93 palabras</li>
+            <li><code>/ES/reino-unido/</code> — 122 palabras</li>
+            <li><code>/ES/brasil/</code> — 135 palabras</li>
+            <li><code>/ES/noticias/</code> — 69 palabras</li>
+          </ul>
+          <p>Cada página de país debería cubrir: requisitos particulares del país, tiempos de proceso, consideraciones de origen de fondos y un caso o dato local.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-med" id="w3o2">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O6 · Ajustar las meta descriptions fuera de rango y completar las que faltan en inglés</div>
+            <div class="tags"><span class="t t-med">On-Page</span><span class="t t-content">Contenido</span></div>
+          </div>
+          <span class="f-time">3 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Recortar.</b> <code>/ES/midtown-brownsville-ii/</code> tiene 341 caracteres y <code>/ES/advisory-board/</code> tiene 178. Ambas se cortan en el resultado de búsqueda. Objetivo: 140-155.</p>
+          <p><b>Completar en inglés.</b> Las 12 páginas sin descripción: <code>/blog/</code>, <code>/category/blog/</code>, <code>/terms-of-service/</code>, las dos de Brownsville Parkside y las 6 de <code>/tag/</code>. Recortar también <code>/blog/strategic-investment-with-open-eb5/</code>, de 166 caracteres.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SEMANA 4 -->
+  <div class="week">
+    <div class="week-h">
+      <span class="wn">Semana 4</span>
+      <span class="wd">1 – 5 Sep · Velocidad y consolidación</span>
+      <span class="wg">Cierra el mes llevando al español el trabajo de rendimiento que ya se hizo en inglés, y limpiando las duplicaciones que quedan en el lado inglés.</span>
+    </div>
+    <div class="week-body">
+      <div class="finding sev-crit" id="w4t">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">T4 · Extender caché y dequeues a <code>/ES/</code></div>
+            <div class="tags"><span class="t t-crit">Técnica</span><span class="t t-es">Español</span><span class="t t-dev">Tema + NitroPack</span></div>
+          </div>
+          <span class="f-time">6 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Caché.</b> Localizar qué está emitiendo <code>Cache-Control: no-store</code> en las rutas españolas (candidatos habituales: una sesión de WooCommerce, el plugin <code>booked</code>, o una regla de exclusión en NitroPack) y eliminarlo para que <code>/ES/</code> entre al caché igual que el inglés.</p>
+          <p><b>Dequeues.</b> Revisar la condición que aplica los dequeues de las Fases 1-4 y ampliarla a las rutas <code>/ES/</code>. Objetivo: bajar de 24 a 10 bundles de plugins, y de 64 a menos de 30 hojas de estilo.</p>
+          <p><b>Requiere QA visual</b> de 6 páginas en español antes y después, porque algunos de esos plugins podrían estar sosteniendo maquetación de Elementor heredada.</p>
+          <p><b>Cómo se verifica.</b> <code>curl -I</code> sobre <code>/ES/</code> muestra caché activo, y el conteo de scripts y hojas de estilo cae al nivel del inglés.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-high" id="w4o1">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O7 · Consolidar los archivos de blog y las páginas de proyecto duplicadas en inglés</div>
+            <div class="tags"><span class="t t-high">On-Page</span><span class="t t-seo">Arquitectura</span></div>
+          </div>
+          <span class="f-time">3 h</span>
+        </div>
+        <div class="f-body">
+          <p><b>Blog.</b> Dejar <code>/eb-5-blog/</code> como archivo canónico y redirigir <code>/blog/</code> y <code>/category/blog/</code>. Hoy los tres coexisten y dos comparten el título "Blog Archives - openeb5".</p>
+          <p><b>Proyectos.</b> Retirar del sitemap <code>/midtown-pharr/</code> y <code>/brownsville-parkside/</code>, ya que redirigen a las versiones bajo <code>/current-projects/</code>.</p>
+          <p><b>Contacto.</b> Decidir entre <code>/contact-us/</code> y <code>/lp-contact-us/</code>: hoy comparten título y contenido. Si la landing es para campañas, ponerle <code>noindex</code>.</p>
+        </div>
+      </div>
+
+      <div class="finding sev-high" id="w4o2">
+        <div class="f-head">
+          <label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
+          <div class="f-main">
+            <div class="f-title">O8 · Actualizar <code>llms.txt</code> y restituir el bloque de AI crawlers</div>
+            <div class="tags"><span class="t t-high">On-Page</span><span class="t t-seo">GEO</span></div>
+          </div>
+          <span class="f-time">2 h</span>
+        </div>
+        <div class="f-body">
+          <p><b><code>llms.txt</code>.</b> Está fechado el 14 de junio, no lista ninguna URL en español y no menciona la aprobación I-956F de Midtown Pharr. Actualizar fecha, añadir una sección de páginas canónicas en español y reflejar el estado real de los proyectos.</p>
+          <p><b><code>robots.txt</code>.</b> El bloque de agentes de IA que se añadió en junio ya no está en el archivo en vivo. Volver a añadirlo, esta vez mediante el filtro <code>robots_txt</code> del tema para que una actualización de Yoast no lo borre de nuevo.</p>
+          <p><b>Schema.</b> Añadir el nodo <code>Organization</code> que falta en la home en español.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h3>Resumen del mes</h3>
+  <div class="tw scroll">
+    <table>
+      <thead><tr><th>Semana</th><th>Técnica</th><th>On-Page 1</th><th>On-Page 2</th><th class="r">Horas</th></tr></thead>
+      <tbody>
+        <tr><td><b>1</b> · 11-15 Ago</td><td>Sitemap ES + <code>lang</code></td><td>13 meta descriptions ES</td><td>Títulos blog ES</td><td class="r">9 h</td></tr>
+        <tr><td><b>2</b> · 18-22 Ago</td><td>27 enlaces rotos + 301</td><td>Títulos 4 países ES</td><td>H1 duplicados ES</td><td class="r">9 h</td></tr>
+        <tr><td><b>3</b> · 25-29 Ago</td><td>hreflang + <code>/ES/ES/</code></td><td>5 páginas cortas ES</td><td>Meta descriptions EN</td><td class="r">14 h</td></tr>
+        <tr><td><b>4</b> · 1-5 Sep</td><td>Caché + dequeues ES</td><td>Consolidar duplicados EN</td><td><code>llms.txt</code> + robots</td><td class="r">11 h</td></tr>
+        <tr><td colspan="4"><b>Total</b></td><td class="r"><b>43 h</b></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <b>Qué esperar al final del mes.</b> Cero enlaces rotos en las 215 URLs. Las ~40 páginas en español declaradas en el sitemap y con idioma correcto. hreflang recíproco entre los dos idiomas. El sitio en español cacheado y con la mitad de peso. Score estimado: <b>78/100</b>. Lo que <b>no</b> va a cambiar en 30 días es la autoridad del dominio: las 4 keywords orgánicas y el perfil de enlaces necesitan el trabajo de la Fase 3 del SOW, que es de plazo trimestral.
+  </div>
+</div>
 </section>
 
 <!-- ============ SOW ============ -->
 <section class="panel" id="p-sow">
-  <h2>Statement of Work · 4 meses</h2>
-  <p class="sub">Plan trabajo <b>14 May 2026 → 13 Sep 2026</b>. 4 fases mensuales · consultor SEO + cliente con WP-admin · target Health Score 29 → 85.</p>
+<div class="wrap">
+  <h2>Scope of Work</h2>
+  <p class="sub">Alcance propuesto a partir del <b>11 de agosto de 2026</b>. La Fase 1 corresponde al plan de 30 días detallado en la pestaña anterior. Las Fases 2 y 3 se ejecutan a continuación y son las que mueven la aguja competitiva.</p>
   <div class="panel-progress"></div>
 
+  <div class="constraint">
+    <b>Condiciones de trabajo del proyecto.</b> El sitio se despliega <b>únicamente por FTP y sin entorno de staging</b>, y ya hubo un incidente de corrupción de archivos en una transferencia previa (julio de 2026). Todo cambio de plantilla se entrega como paquete comprimido con manifiesto MD5 y se verifica tras subirlo. Los cambios de configuración de NitroPack, cPanel y Yoast dependen de acceso del cliente.
+  </div>
+
   <div class="phase">
-    <div class="phase-h"><div class="p">Fase 1 · Mes 1 — Fundación + Performance</div><div class="w">14 May → 13 Jun · ✅ CERRADA</div></div>
-    <p class="sub"><b>Estado:</b> Mobile 14 → 32 (medido). Cubierto por Claude + cliente.</p>
+    <div class="phase-h"><span class="p">Fase 1 · Reparación de fundamentos</span><span class="w">Semanas 1-4 · 43 h</span></div>
     <ul>
-      <li>1.1 · Subir disavow file GSC (94 dominios tóxicos) — <b>pendiente cliente</b></li>
-      <li>1.2 · Fix homepage title + meta — <b>pendiente cliente</b></li>
-      <li>1.3 · Yoast Site Representation (name, logo, address) — <b>pendiente cliente</b></li>
-      <li>1.4 · Hreflang activo (Ruta 2 en child theme home) — <b>✅ Claude §7.2</b></li>
-      <li>1.5 · Submitar URLs /ES/ al sitemap — <b>pendiente cliente · §8.4 hook Yoast listo</b></li>
-      <li>1.6 · 6 security headers Cloudflare — <b>pendiente cliente Cloudflare</b></li>
-      <li>1.7 · Backup completo UpdraftPlus — <b>pendiente cliente</b></li>
-      <li>1.8 · WP Rocket → DECISIÓN: <b>NitroPack mantenido</b> · ✅ HIT estable</li>
-      <li>1.9 · Eliminar 7 plugins inútiles — <b>✅ 6 hechos (Crypto, Meks, Smart Slider, MonsterInsights, Booked, weimg)</b></li>
-      <li>1.10 · Reemplazar RevSlider → <b>✅ Camino B hero estático en home (ahorro 516 KB JS)</b></li>
-      <li>1.11 · Fix 2 links rotos — <b>✅ §8.3 301 server-side</b></li>
-      <li>1.12 · Fix canonical /author/user_open/ — <b>✅ Claude §7.1 safety net</b></li>
-      <li>1.13 · Audit post-Fase 1 (Lighthouse + Health) — <b>✅ Mobile 14→46 medido</b></li>
+      <li><b>Indexación del sitio en español.</b> Sitemap con las ~40 URLs de <code>/ES/</code>, atributo <code>lang</code> correcto en las 122 páginas, envío y validación en Search Console.</li>
+      <li><b>Reparación de enlaces.</b> Los 27 enlaces internos rotos entre ambos idiomas, más las reglas 301 de respaldo, incluyendo <code>/es/</code> en minúsculas.</li>
+      <li><b>hreflang y duplicación.</b> Generador de hreflang reescrito con mapa explícito de slugs, y cierre de las 38 URLs fantasma bajo <code>/ES/ES/</code>.</li>
+      <li><b>Rendimiento del sitio en español.</b> Activación de caché y extensión de los dequeues, con QA visual de 6 páginas.</li>
+      <li><b>Metadatos.</b> 45 títulos y meta descriptions entre los dos idiomas, priorizando las páginas con posiciones existentes.</li>
+      <li><b>Entregable.</b> Re-crawl de verificación de las 215 URLs y actualización de este panel.</li>
     </ul>
   </div>
 
   <div class="phase">
-    <div class="phase-h"><div class="p">Fase 2 · Mes 2 — Schema + On-Page</div><div class="w">14 Jun → 13 Jul · ✅ EN CURSO (50%)</div></div>
+    <div class="phase-h"><span class="p">Fase 2 · Profundidad de contenido y E-E-A-T</span><span class="w">Semanas 5-10 · ~60 h</span></div>
     <ul>
-      <li>2.1 · FinancialService + LocalBusiness JSON-LD — <b>✅ Claude §14 vivo (FinSvc + LocalBus + 9 Country + Geo + Hours)</b></li>
-      <li>2.2 · BreadcrumbList válida sitewide (Yoast) — <b>pendiente cliente</b></li>
-      <li>2.3 · FAQ schema auto via <code>&lt;details&gt;</code> + shortcode — <b>✅ Claude §13</b></li>
-      <li>2.4 · Service + InvestmentOrDeposit en /eb-5/ y projects — <b>pendiente</b></li>
-      <li>2.5 · Person schema + bios autor — <b>✅ Person en single posts (§14) · bios pendientes cliente</b></li>
-      <li>2.6 · Meta descriptions 15 pages clave — <b>pendiente cliente</b></li>
-      <li>2.7 · Rewrite homepage hero — <b>✅ Camino B v2.1: verde accent + 3 props + tel CTA</b></li>
-      <li>2.8 · OG image 1200×630 — <b>pendiente cliente</b></li>
-      <li>2.9 · noindex pages basura (/confirmation/, /success/, etc.) — <b>pendiente cliente</b></li>
-      <li>2.10 · <b>BONUS</b> llms.txt + .well-known/security.txt + 8 AI crawlers named — <b>✅ Claude §12 + FTP</b></li>
+      <li><b>Páginas de país.</b> Llevar las 18 páginas cortas (10 en español, 8 en inglés) a 400-600 palabras con contenido específico de mercado: requisitos locales, plazos, origen de fondos.</li>
+      <li><b>Países faltantes.</b> Crear Canadá, Francia, Turquía y Venezuela en ambos idiomas, hoy enlazadas desde el menú y devolviendo 404.</li>
+      <li><b>Señales de autoría.</b> Biografías de autor con <code>Person</code> schema en las entradas de blog. En un sector YMYL de inmigración e inversión es un requisito, no un extra.</li>
+      <li><b>Guía pilar.</b> Reescritura de <code>/the-complete-guide-to-eb-5-investment/</code> y su equivalente español como contenido de referencia, con la estructura de preguntas y respuestas que favorece la citación en buscadores con IA.</li>
+      <li><b>Datos de schema.</b> Integrar los 11 datos pendientes del cliente (ID de Regional Center USCIS, dirección, teléfono E.164, logo cuadrado) para habilitar el Knowledge Panel.</li>
+      <li><b>Cabeceras de seguridad.</b> HSTS, CSP, X-Frame-Options y COOP.</li>
     </ul>
   </div>
 
   <div class="phase">
-    <div class="phase-h"><div class="p">Fase 3 · Mes 3 — Content YMYL + GEO</div><div class="w">14 Jul → 13 Aug · 32 h</div></div>
+    <div class="phase-h"><span class="p">Fase 3 · Autoridad y visibilidad</span><span class="w">Semanas 11-20 · ~80 h</span></div>
     <ul>
-      <li>3.1 · Rewrite pillar guide /the-complete-guide-to-eb-5-investment/ (16 h) — 3×word count, TEA, Reform Act 2022, USCIS.gov cites, FAQs</li>
-      <li>3.2 · Bios completas /the-team/ + named attorney + securities counsel (8 h)</li>
-      <li>3.3 · "Last updated" + byline en blog posts (2 h)</li>
-      <li>3.4 · Rewrite top 5 country pages (China, India, Vietnam, Brazil, México) — Phase 1 of 2</li>
-      <li>3.5 · /llms.txt + /.well-known/security.txt</li>
-      <li>3.6 · GBP McAllen · IIUSA member · Crunchbase</li>
+      <li><b>El problema de fondo.</b> Cuatro keywords orgánicas y una visita estimada al mes. El sitio está técnicamente sano pero es invisible. Sin enlaces entrantes no hay competencia posible en un sector tan disputado como el EB-5.</li>
+      <li><b>Presencia en terceros.</b> Perfiles y menciones en directorios del sector (IIUSA, EB5 Investors, plataformas de Regional Centers) y en medios de inmigración de los mercados hispanos.</li>
+      <li><b>Calendario editorial.</b> Contenido en español enfocado en los mercados donde ya hay posiciones: México, Chile, Argentina y España.</li>
+      <li><b>Optimización para buscadores con IA.</b> Formato de respuesta directa y cápsulas de citación en las páginas clave, aprovechando que <code>llms.txt</code> y el schema ya están en su sitio.</li>
+      <li><b>Limpieza de enlaces.</b> Revisión y disavow de los 94 dominios señalados en Search Console.</li>
+      <li><b>Medición.</b> Informe mensual de posiciones por mercado y por idioma.</li>
     </ul>
   </div>
 
-  <div class="phase">
-    <div class="phase-h"><div class="p">Fase 4 · Mes 4 — Authority + Monitoring</div><div class="w">14 Aug → 13 Sep · 24 h</div></div>
-    <ul>
-      <li>4.1 · 12 nuevos blog posts keyword-gap (calendario editorial)</li>
-      <li>4.2 · PR I-956F approvals · 4 guest articles · LatAm research piece</li>
-      <li>4.3 · Backlink building outreach</li>
-      <li>4.4 · Critical CSS NitroPack ON tras QA visual</li>
-      <li>4.5 · Audit final + dashboard de monitoring</li>
-      <li>4.6 · Handoff: documentación + playbook mensual</li>
-    </ul>
-  </div>
-
-  <div class="note"><b>Meta de salida del SOW:</b> Health Score 85+ · Lighthouse Mobile 80+ · CWV todos verdes en CrUX · indexación restaurada en GSC · primeras posiciones organic ranking para "EB-5 Texas" / "EB-5 McAllen" / "EB-5 Regional Center investor Spanish".</div>
-</section>
-
-<!-- ============ CHECKLIST ============ -->
-<section class="panel" id="p-checklist">
-  <h2>Checklist consolidado</h2>
-  <p class="sub">Vista unificada de TODAS las tareas. Marca lo verificado — el score del hero sube automáticamente. El estado persiste en localStorage.</p>
-  <div class="panel-progress"></div>
-
-  <h3>Fase 2 — Acciones inmediatas (orden estricto)</h3>
-
-  <article class="finding sev-crit done" id="cl-ftp">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">F2-A · Subir 4 archivos FTP (.htaccess + style.css + functions.php + screenshot.png)</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-cliente">Cliente (hecho 11-14 Jun)</span></div></div>
-      <span class="f-time">resuelto</span></div>
-  </article>
-
-  <article class="finding sev-crit partial" id="cl-nitropack">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">F2-B · NitroPack: Combine JS ON · Minify HTML OFF · Critical CSS OFF inicial · WebP ON · Lazy bg ON</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-cliente">Panel NitroPack</span></div></div>
-      <span class="f-time">pendiente cliente</span></div>
-    <div class="f-body"><p><b>Estado.</b> NitroPack ya en <code>HIT</code> estable y combinando CSS (styles 72 → 12). Combine JS / Delay JS / Critical CSS aún sin configurar — esperando entrar al panel.</p></div>
-  </article>
-
-  <article class="finding sev-crit" id="cl-accelerate">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">F2-C · Apagar AccelerateWP + LSCache + NGINX FastCGI en cPanel</div>
-        <div class="tags"><span class="t t-crit">Critical</span><span class="t t-cliente">Hosting</span></div></div>
-      <span class="f-time">5 min</span></div>
-  </article>
-
-  <article class="finding sev-high done" id="cl-blocks">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">F2-D · Activar BLOCKS #1 → #3 (Flaticon, animate, FA v4) — riesgo low-risk zero</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-claude">Claude (Fase 4)</span></div></div>
-      <span class="f-time">resuelto</span></div>
-    <div class="f-body"><p><b>+#5 + #6 + #9.</b> Total 7/9 bloques activos. Falta solo #4 (magnific-popup) y #7 (ElementsKit demo) que requieren QA visual.</p></div>
-  </article>
-
-  <article class="finding sev-high" id="cl-zips">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">F2-E · Borrar 3 ZIPs públicos del servidor (yoast-premium, emage, ct-attachment)</div>
-        <div class="tags"><span class="t t-high">High · Compliance</span><span class="t t-cliente">FTP</span></div></div>
-      <span class="f-time">5 min</span></div>
-    <div class="f-body"><p><b>Estado.</b> <code>.htaccess</code> bloquea acceso público (HTTP 403). Borrarlos del filesystem libera 17 MB pero el riesgo de compliance ya está mitigado.</p></div>
-  </article>
-
-  <article class="finding sev-high done" id="cl-plugins-rm">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task" checked><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">F2-F · Eliminar 6 plugins zombies (Crypto, Meks, Smart Slider, MonsterInsights, Booked, weimg)</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-cliente">Cliente WP Admin (hecho 14 Jun)</span></div></div>
-      <span class="f-time">resuelto</span></div>
-  </article>
-
-  <article class="finding sev-high" id="cl-critical-css">
-    <div class="f-head"><label class="chk"><input type="checkbox" class="task"><span class="box"></span></label>
-      <div class="f-main"><div class="f-title">F2-G · Critical CSS NitroPack ON tras QA visual de 6 páginas</div>
-        <div class="tags"><span class="t t-high">High</span><span class="t t-cliente">NitroPack</span></div></div>
-      <span class="f-time">15 min + QA</span></div>
-  </article>
-
-  <h3>Datos cliente pendientes para activar schema (B5)</h3>
-  <div class="note">
-    <b>Schema FinancialService listo, esperando 11 datos:</b> USCIS Regional Center ID · Street/City/State/Postcode · Phone E.164 · Email público · Año fundación · Logo cuadrado 200×200+ (el actual 674×150 NO sirve para Knowledge Panel) · Areas served · Lenguajes · Founders opcional · Twitter handle. Detalle: <code>reports/B5-schema-datos.md §2</code>.
-  </div>
-
-  <h3>Métricas esperadas tras cada paso</h3>
-  <div class="tw">
+  <h3>Entregables por fase</h3>
+  <div class="tw scroll">
     <table>
-      <thead><tr><th>Paso</th><th class="r">Mobile</th><th class="r">Desktop</th><th>Razón</th></tr></thead>
+      <thead><tr><th>Fase</th><th>Entregable</th><th>Formato</th><th>Cuándo</th></tr></thead>
       <tbody>
-        <tr><td>Mayo baseline</td><td class="r vc">14</td><td class="r vc">28</td><td>Cache no-store + 76 scripts + payload 12 MB</td></tr>
-        <tr><td>Fase 2 (11 Jun)</td><td class="r vh">32</td><td class="r vh">49</td><td>Cache HIT · PII bloqueado · CLS verde</td></tr>
-        <tr><td><b>Hoy 14 Jun (Fase 4)</b></td><td class="r vh"><b>46</b></td><td class="r vh"><b>62</b></td><td>Camino B · 6 plugins fuera · 7/9 dequeues · scripts 59 · styles 12 · payload 3.5 MB</td></tr>
-        <tr><td>+ NitroPack Combine JS + Delay JS</td><td class="r vh">58-68</td><td class="r vg">75-82</td><td>Scripts 59 → 30-35 con Combine · Delay terceros</td></tr>
-        <tr><td>+ AccelerateWP OFF cPanel</td><td class="r vh">62-72</td><td class="r vg">80-85</td><td>Confirma single-cache provider sin solapamiento</td></tr>
-        <tr><td>+ Critical CSS NitroPack</td><td class="r vg">75-88</td><td class="r vg">88-95</td><td>FCP 2.5s → 1.4s · LCP 5s → 2.8s</td></tr>
-        <tr><td>+ Cloudflare security headers</td><td class="r vg">78-90</td><td class="r vg">90-96</td><td>HSTS preload · CSP · XFO · COOP</td></tr>
+        <tr><td>1</td><td>Paquetes de tema con manifiesto MD5 e instrucciones de subida</td><td>ZIP + Markdown</td><td>Semanal</td></tr>
+        <tr><td>1</td><td>Re-crawl de verificación de las 215 URLs</td><td>CSV + panel</td><td>Fin de semana 4</td></tr>
+        <tr><td>1</td><td>Hoja de títulos y meta descriptions para cargar en Yoast</td><td>Hoja de cálculo</td><td>Semanas 1-3</td></tr>
+        <tr><td>2</td><td>Contenido redactado de páginas de país en ambos idiomas</td><td>Markdown + carga</td><td>Semanas 5-10</td></tr>
+        <tr><td>2</td><td>Guía pilar reescrita, versiones inglesa y española</td><td>Markdown + carga</td><td>Semana 9</td></tr>
+        <tr><td>3</td><td>Informe mensual de posiciones por mercado</td><td>Panel + PDF</td><td>Mensual</td></tr>
       </tbody>
     </table>
   </div>
+
+  <h3>Qué necesitamos del cliente</h3>
+  <div class="tw scroll">
+    <table>
+      <thead><tr><th>Elemento</th><th>Bloquea</th><th>Urgencia</th></tr></thead>
+      <tbody>
+        <tr><td>Acceso al panel de NitroPack</td><td>Combine JS, Delay JS, Critical CSS y caché del español</td><td class="vc">Semana 1</td></tr>
+        <tr><td>Acceso a cPanel</td><td>Reglas 301, apagado de AccelerateWP</td><td class="vc">Semana 2</td></tr>
+        <tr><td>Los 11 datos de schema</td><td>Knowledge Panel y rich results</td><td class="vh">Fase 2</td></tr>
+        <tr><td>Logo cuadrado 200×200 o mayor</td><td>Knowledge Panel (el actual es 674×150)</td><td class="vh">Fase 2</td></tr>
+        <tr><td>Biografías y credenciales del equipo</td><td>Señales E-E-A-T en sector YMYL</td><td class="vh">Fase 2</td></tr>
+        <tr><td>Validación legal del contenido nuevo</td><td>Publicación de páginas de país</td><td class="vi">Continuo</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="note">
+    <b>Sobre las expectativas de plazo.</b> Las Fases 1 y 2 corrigen problemas que hoy impiden competir, y su efecto se ve en indexación y en impresiones en cuestión de semanas. El crecimiento de posiciones y tráfico depende de la Fase 3, que es trabajo de autoridad y tiene un horizonte de tres a seis meses. Prometer movimiento de rankings en 30 días en un sector YMYL con un dominio de esta autoridad no sería realista.
+  </div>
+</div>
 </section>
 
-</div>
-
 <footer>
-  <p><b>Auditoría SEO openeb5.com · v3 · 14 Jun 2026</b> · Verificado en vivo (HTML real + cURL + grep schemas) · Confidencial</p>
-  <p>Snapshot inicial wp-content: <code>982d36b6</code> · Fase 1: <code>1a189cfd</code> · Fase 2: <code>a7e52fdc</code> · §7 ejecutables: <code>8e1ecf37</code> · Camino B §9: <code>d3218ddc</code> · F4 hero v2.1 + topbar: <code>21098ae2</code> · F4 fonts swap §11: <code>79ab01f1</code> · F4 dequeues #1-#3: <code>9b05a932</code> · F4 dequeues #5+#6+#9: <code>3fbcf80e</code> · F4 SEO GEO §12-§14: <code>e476e44c</code> · Rollback total disponible</p>
+  <div class="wrap">
+    <p><b>Auditoría SEO openeb5.com + /ES · v4 · 7 Ago 2026</b> · Crawl propio de 215 URLs · Verificado en vivo (HTML real + cURL + headers + Ahrefs) · Confidencial</p>
+    <p>Método: crawl BFS con extracción de <code>title</code>, <code>meta description</code>, <code>H1</code>, <code>canonical</code>, <code>hreflang</code>, <code>lang</code>, <code>robots</code>, conteo de palabras y de <code>alt</code> · verificación serial de códigos de estado · comparativa de stack de assets entre idiomas · métricas orgánicas de Ahrefs Site Explorer al 7 Ago 2026</p>
+  </div>
 </footer>
 
 <script>
@@ -1018,10 +1320,10 @@ sitemap: false
     });
   });
 
-  // BASE = score con 0 tareas check (peor caso post-Mayo)
-  // TARGET = score con 100% tareas check (Día 90 sept-2026)
-  const BASE_SCORE = 32;
-  const TARGET_SCORE = 95;
+  // BASE = score con 0 tareas marcadas (estado al 7 Ago 2026)
+  // TARGET = score con 100% de tareas marcadas (fin Fase 1 + pendientes)
+  const BASE_SCORE = 58;
+  const TARGET_SCORE = 92;
   function updateProgress() {
     let totalChecked = 0, total = 0;
     document.querySelectorAll('.panel').forEach(panel => {
@@ -1049,7 +1351,7 @@ sitemap: false
       else if (score < 75) qual = '· Mejorando';
       else if (score < 90) qual = '· Bueno';
       else qual = '· Excelente';
-      heroL.textContent = '/100 · Mobile ' + qual;
+      heroL.textContent = '/100 ' + qual;
     }
     if (heroScore) {
       const pct = total ? Math.round((totalChecked / total) * 100) : 0;
@@ -1059,7 +1361,7 @@ sitemap: false
 
   document.querySelectorAll('.finding').forEach(card => {
     const input = card.querySelector('input.task');
-    const key = 'openeb5-audit-v3-' + (card.id || Math.random());
+    const key = 'openeb5-audit-v4-' + (card.id || Math.random());
     if (input) {
       const stored = localStorage.getItem(key);
       if (stored === '1' || card.classList.contains('done')) input.checked = true;
